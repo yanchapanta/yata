@@ -84,7 +84,7 @@ a:hover {
   gap: 0.5rem;
   padding: 0.7rem 1rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .btn-search {
     padding: 0.5rem 1rem;
   }
@@ -198,7 +198,7 @@ section.sec-modal-add-card .btn-modal-close .icon-close-color {
 section.sec-modal-add-card .btn-modal-close .icon-close-color:hover {
   fill: red;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   section.sec-modal-add-card {
     width: 384px;
     right: 0;
@@ -211,13 +211,13 @@ section.sec-modal-add-card .btn-modal-close .icon-close-color:hover {
   display: grid;
   grid-template-rows: 14rem calc(100vh - 22rem);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .sec-modal-add-card-container {
     width: 100%;
     right: 0;
   }
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .sec-modal-add-card-container {
     grid-template-rows: 14rem calc(100vh - 22rem);
   }

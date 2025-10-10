@@ -2,7 +2,7 @@
   width: 100vw;
   height: calc(100vh - 4rem);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-myOrders {
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
   flex-direction: column;
   gap: 2rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-myOrders-container {
     width: 40%;
     height: 80%;

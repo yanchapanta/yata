@@ -1,9 +1,5 @@
-:root {
-  --hidden-phone: none;
-  --hidden-desktop: block;
-}
-@media only screen and (min-width: 64em) {
-  :root {
+@media only screen and (min-width: 63em) {
+  .element {
     --hidden-phone: block;
     --hidden-desktop: none;
   }
@@ -701,233 +697,7 @@ a:hover {
   gap: 0.5rem;
   padding: 0.7rem 1rem;
 }
-@media only screen and (min-width: 64em) {
-  .btn-search {
-    padding: 0.5rem 1rem;
-  }
-}
-.btn-search input {
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-.btn-search input:focus {
-  font-weight: 500;
-  color: #797979;
-}
-.btn-search label svg {
-  margin-top: 10px;
-}
-
-.btn-search:hover .btn-search-hover {
-  fill: #81A385;
-}
-
-.btn-order label {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-}
-.btn-order select {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  background-color: white;
-  border: none;
-  color: #797979;
-  outline: none;
-  font-weight: normal;
-}
-.btn-order select:focus {
-  outline: 1px solid #F7F7F7;
-}
-
-.bg {
-  background: #f7f7f7;
-  border: 1px solid #f7f7f7;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.card-icon-shopping .card-icon-shopping-hover {
-  transition: fill 0.3s linear, stroke 0.3s linear;
-}
-
-.card-icon-shopping:hover .card-icon-shopping-hover {
-  fill: #81A385;
-  stroke: #81A385;
-}
-
-.browser-bar > div:first-child {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.browser-bar > div:nth-child(2) {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-label {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.input {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #797979;
-}
-
-.form-link {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #acd9b2;
-}
-
-.text-title {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #000000;
-}
-
-.text-paragraph {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #797979;
-}
-
-.menu a {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #c7c7c7;
-}
-
-.section-login-container {
-  display: grid;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.text-gmail {
-  font-family: Quicksand, sans-serif;
-  font-family: Quicksand;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.title-1 {
-  font-family: Quicksand, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 100%;
-  line-height: 22px;
-  color: #000000;
-}
-
-.title-submenu-dropdown {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-  text-align: right;
-  color: #000000;
-}
-
-.box-shadow-1 {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
-}
-
-.bar-top-1 {
-  mix-blend-mode: normal;
-  opacity: 0.1;
-  border-top: 1px solid #979797;
-}
-
-.btn-link {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: right;
-  color: #25b138;
-  transition: background-color 0.3s linear;
-}
-.icon {
-  fill: #797979;
-  transition: fill 0.3s linear;
-}
-
-.icon .icon-menu-color {
-  transition: fill 0.3s linear;
-}
-
-.icon:hover .icon-menu-color {
-  fill: #000000;
-}
-
-.icon-close-color {
-  fill: #797979;
-}
-
-.icon-close .icon-close-color {
-  transition: fill 0.3s linear;
-}
-
-.icon-close:hover .icon-close-color {
-  fill: #000000;
-}
-
-.btn-search {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1rem;
-}
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .btn-search {
     padding: 0.5rem 1rem;
   }
@@ -998,7 +768,7 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .browser-bar {
     display: none;
   }
@@ -1020,232 +790,6 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-.browser-bar > div:first-child {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.browser-bar > div:nth-child(2) {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-label {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.input {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #797979;
-}
-
-.form-link {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #acd9b2;
-}
-
-.text-title {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #000000;
-}
-
-.text-paragraph {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #797979;
-}
-
-.menu a {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #c7c7c7;
-}
-
-.section-login-container {
-  display: grid;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.text-gmail {
-  font-family: Quicksand, sans-serif;
-  font-family: Quicksand;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.title-1 {
-  font-family: Quicksand, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 100%;
-  line-height: 22px;
-  color: #000000;
-}
-
-.title-submenu-dropdown {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-  text-align: right;
-  color: #000000;
-}
-
-.box-shadow-1 {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
-}
-
-.bar-top-1 {
-  mix-blend-mode: normal;
-  opacity: 0.1;
-  border-top: 1px solid #979797;
-}
-
-.btn-link {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: right;
-  color: #25b138;
-  transition: background-color 0.3s linear;
-}
-.icon {
-  fill: #797979;
-  transition: fill 0.3s linear;
-}
-
-.icon .icon-menu-color {
-  transition: fill 0.3s linear;
-}
-
-.icon:hover .icon-menu-color {
-  fill: #000000;
-}
-
-.icon-close-color {
-  fill: #797979;
-}
-
-.icon-close .icon-close-color {
-  transition: fill 0.3s linear;
-}
-
-.icon-close:hover .icon-close-color {
-  fill: #000000;
-}
-
-.btn-search {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1rem;
-}
-@media only screen and (min-width: 64em) {
-  .btn-search {
-    padding: 0.5rem 1rem;
-  }
-}
-.btn-search input {
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-.btn-search input:focus {
-  font-weight: 500;
-  color: #797979;
-}
-.btn-search label svg {
-  margin-top: 10px;
-}
-
-.btn-search:hover .btn-search-hover {
-  fill: #81A385;
-}
-
-.btn-order label {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-}
-.btn-order select {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  background-color: white;
-  border: none;
-  color: #797979;
-  outline: none;
-  font-weight: normal;
-}
-.btn-order select:focus {
-  outline: 1px solid #F7F7F7;
-}
-
-.bg {
-  background: #f7f7f7;
-  border: 1px solid #f7f7f7;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.card-icon-shopping .card-icon-shopping-hover {
-  transition: fill 0.3s linear, stroke 0.3s linear;
-}
-
-.card-icon-shopping:hover .card-icon-shopping-hover {
-  fill: #81A385;
-  stroke: #81A385;
 }
 
 .btn-sign {
@@ -1336,7 +880,7 @@ a:hover {
 .container-1 {
   padding: 1rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .container-1 {
     padding: 0rem 2rem;
   }
@@ -1346,7 +890,7 @@ a:hover {
   width: 100vw;
   height: calc(100vh - 4rem);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-login {
     display: flex;
     justify-content: center;
@@ -1357,7 +901,7 @@ a:hover {
   height: 100%;
   grid-template-rows: 4rem 4rem 1fr 4rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-login-container {
     width: 40%;
     height: 80%;
@@ -1367,7 +911,7 @@ a:hover {
 .section-login-container .logotipo {
   justify-self: center;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-login-container .logotipo {
     display: none;
   }
@@ -1376,7 +920,7 @@ a:hover {
 .section-login-btn-close {
   justify-self: end;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-login-btn-close {
     display: none;
   }
@@ -1407,237 +951,11 @@ a:hover {
   width: 100%;
 }
 
-.browser-bar > div:first-child {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.browser-bar > div:nth-child(2) {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-label {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.input {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #797979;
-}
-
-.form-link {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #acd9b2;
-}
-
-.text-title {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #000000;
-}
-
-.text-paragraph {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #797979;
-}
-
-.menu a {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #c7c7c7;
-}
-
-.section-login-container {
-  display: grid;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.text-gmail {
-  font-family: Quicksand, sans-serif;
-  font-family: Quicksand;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.title-1 {
-  font-family: Quicksand, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 100%;
-  line-height: 22px;
-  color: #000000;
-}
-
-.title-submenu-dropdown {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-  text-align: right;
-  color: #000000;
-}
-
-.box-shadow-1 {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
-}
-
-.bar-top-1 {
-  mix-blend-mode: normal;
-  opacity: 0.1;
-  border-top: 1px solid #979797;
-}
-
-.btn-link {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: right;
-  color: #25b138;
-  transition: background-color 0.3s linear;
-}
-.icon {
-  fill: #797979;
-  transition: fill 0.3s linear;
-}
-
-.icon .icon-menu-color {
-  transition: fill 0.3s linear;
-}
-
-.icon:hover .icon-menu-color {
-  fill: #000000;
-}
-
-.icon-close-color {
-  fill: #797979;
-}
-
-.icon-close .icon-close-color {
-  transition: fill 0.3s linear;
-}
-
-.icon-close:hover .icon-close-color {
-  fill: #000000;
-}
-
-.btn-search {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1rem;
-}
-@media only screen and (min-width: 64em) {
-  .btn-search {
-    padding: 0.5rem 1rem;
-  }
-}
-.btn-search input {
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-.btn-search input:focus {
-  font-weight: 500;
-  color: #797979;
-}
-.btn-search label svg {
-  margin-top: 10px;
-}
-
-.btn-search:hover .btn-search-hover {
-  fill: #81A385;
-}
-
-.btn-order label {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-}
-.btn-order select {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  background-color: white;
-  border: none;
-  color: #797979;
-  outline: none;
-  font-weight: normal;
-}
-.btn-order select:focus {
-  outline: 1px solid #F7F7F7;
-}
-
-.bg {
-  background: #f7f7f7;
-  border: 1px solid #f7f7f7;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.card-icon-shopping .card-icon-shopping-hover {
-  transition: fill 0.3s linear, stroke 0.3s linear;
-}
-
-.card-icon-shopping:hover .card-icon-shopping-hover {
-  fill: #81A385;
-  stroke: #81A385;
-}
-
 .section-acount {
   width: 100vw;
   height: calc(100vh - 4rem);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-acount {
     display: flex;
     justify-content: center;
@@ -1650,7 +968,7 @@ a:hover {
   display: grid;
   grid-template-rows: 6rem 1fr;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-acount-container {
     width: 30%;
     height: 70%;
@@ -1668,232 +986,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.browser-bar > div:first-child {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.browser-bar > div:nth-child(2) {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-label {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.input {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #797979;
-}
-
-.form-link {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #acd9b2;
-}
-
-.text-title {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #000000;
-}
-
-.text-paragraph {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #797979;
-}
-
-.menu a {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #c7c7c7;
-}
-
-.section-login-container {
-  display: grid;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.text-gmail {
-  font-family: Quicksand, sans-serif;
-  font-family: Quicksand;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.title-1 {
-  font-family: Quicksand, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 100%;
-  line-height: 22px;
-  color: #000000;
-}
-
-.title-submenu-dropdown {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-  text-align: right;
-  color: #000000;
-}
-
-.box-shadow-1 {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
-}
-
-.bar-top-1 {
-  mix-blend-mode: normal;
-  opacity: 0.1;
-  border-top: 1px solid #979797;
-}
-
-.btn-link {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: right;
-  color: #25b138;
-  transition: background-color 0.3s linear;
-}
-.icon {
-  fill: #797979;
-  transition: fill 0.3s linear;
-}
-
-.icon .icon-menu-color {
-  transition: fill 0.3s linear;
-}
-
-.icon:hover .icon-menu-color {
-  fill: #000000;
-}
-
-.icon-close-color {
-  fill: #797979;
-}
-
-.icon-close .icon-close-color {
-  transition: fill 0.3s linear;
-}
-
-.icon-close:hover .icon-close-color {
-  fill: #000000;
-}
-
-.btn-search {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1rem;
-}
-@media only screen and (min-width: 64em) {
-  .btn-search {
-    padding: 0.5rem 1rem;
-  }
-}
-.btn-search input {
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-.btn-search input:focus {
-  font-weight: 500;
-  color: #797979;
-}
-.btn-search label svg {
-  margin-top: 10px;
-}
-
-.btn-search:hover .btn-search-hover {
-  fill: #81A385;
-}
-
-.btn-order label {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-}
-.btn-order select {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  background-color: white;
-  border: none;
-  color: #797979;
-  outline: none;
-  font-weight: normal;
-}
-.btn-order select:focus {
-  outline: 1px solid #F7F7F7;
-}
-
-.bg {
-  background: #f7f7f7;
-  border: 1px solid #f7f7f7;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.card-icon-shopping .card-icon-shopping-hover {
-  transition: fill 0.3s linear, stroke 0.3s linear;
-}
-
-.card-icon-shopping:hover .card-icon-shopping-hover {
-  fill: #81A385;
-  stroke: #81A385;
 }
 
 .btn-menu {
@@ -1935,7 +1027,7 @@ a:hover {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
   display: none;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .menu-header {
     display: grid;
   }
@@ -1960,10 +1052,10 @@ a:hover {
   gap: 2rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .menu-header-phone {
     padding: 0.5rem 2rem;
-    grid-template-columns: auto 2fr 1fr;
+    grid-template-columns: auto 2fr 1fr 1fr;
     gap: 2rem;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
     display: grid;
@@ -1972,7 +1064,7 @@ a:hover {
 .menu-header-phone .btn-link {
   display: none;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .menu-header-phone .btn-link {
     display: block;
   }
@@ -1980,7 +1072,7 @@ a:hover {
 .menu-header-phone .menu {
   display: none;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .menu-header-phone .menu {
     display: flex;
     align-items: center;
@@ -1993,7 +1085,7 @@ a:hover {
   display: none;
   justify-self: start;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .menu-header-phone > div:nth-child(2) {
     align-items: center;
     gap: 2rem;
@@ -2029,7 +1121,7 @@ a:hover {
   overflow-x: scroll;
   width: 330px;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .menu-home1 {
     display: none;
   }
@@ -2048,7 +1140,7 @@ a:hover {
   flex-direction: column;
   gap: 1rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .search-header {
     display: grid;
     grid-template-columns: 30% 1fr;
@@ -2065,7 +1157,7 @@ a:hover {
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(163px, 350px));
-  grid-auto-rows: 253px;
+  grid-auto-rows: 30%;
   gap: 1rem;
 }
 @media only screen and (min-width: 18.75em) {
@@ -2080,10 +1172,10 @@ a:hover {
     grid-auto-rows: 209px;
   }
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .cards-container {
     grid-template-columns: repeat(5, minmax(163px, 350px));
-    grid-auto-rows: 250px;
+    grid-auto-rows: 35%;
   }
 }
 
@@ -2158,232 +1250,6 @@ a:hover {
   display: flex;
 }
 
-.browser-bar > div:first-child {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.browser-bar > div:nth-child(2) {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-label {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.input {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #797979;
-}
-
-.form-link {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #acd9b2;
-}
-
-.text-title {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #000000;
-}
-
-.text-paragraph {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #797979;
-}
-
-.menu a {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #c7c7c7;
-}
-
-.section-login-container {
-  display: grid;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.text-gmail {
-  font-family: Quicksand, sans-serif;
-  font-family: Quicksand;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-
-.title-1 {
-  font-family: Quicksand, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 100%;
-  line-height: 22px;
-  color: #000000;
-}
-
-.title-submenu-dropdown {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-  text-align: right;
-  color: #000000;
-}
-
-.box-shadow-1 {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
-}
-
-.bar-top-1 {
-  mix-blend-mode: normal;
-  opacity: 0.1;
-  border-top: 1px solid #979797;
-}
-
-.btn-link {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: right;
-  color: #25b138;
-  transition: background-color 0.3s linear;
-}
-.icon {
-  fill: #797979;
-  transition: fill 0.3s linear;
-}
-
-.icon .icon-menu-color {
-  transition: fill 0.3s linear;
-}
-
-.icon:hover .icon-menu-color {
-  fill: #000000;
-}
-
-.icon-close-color {
-  fill: #797979;
-}
-
-.icon-close .icon-close-color {
-  transition: fill 0.3s linear;
-}
-
-.icon-close:hover .icon-close-color {
-  fill: #000000;
-}
-
-.btn-search {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1rem;
-}
-@media only screen and (min-width: 64em) {
-  .btn-search {
-    padding: 0.5rem 1rem;
-  }
-}
-.btn-search input {
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-.btn-search input:focus {
-  font-weight: 500;
-  color: #797979;
-}
-.btn-search label svg {
-  margin-top: 10px;
-}
-
-.btn-search:hover .btn-search-hover {
-  fill: #81A385;
-}
-
-.btn-order label {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-}
-.btn-order select {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  background-color: white;
-  border: none;
-  color: #797979;
-  outline: none;
-  font-weight: normal;
-}
-.btn-order select:focus {
-  outline: 1px solid #F7F7F7;
-}
-
-.bg {
-  background: #f7f7f7;
-  border: 1px solid #f7f7f7;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.card-icon-shopping .card-icon-shopping-hover {
-  transition: fill 0.3s linear, stroke 0.3s linear;
-}
-
-.card-icon-shopping:hover .card-icon-shopping-hover {
-  fill: #81A385;
-  stroke: #81A385;
-}
-
 .card-price {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -2435,7 +1301,7 @@ section.sec-modal-add-card .btn-modal-close .icon-close-color {
 section.sec-modal-add-card .btn-modal-close .icon-close-color:hover {
   fill: red;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   section.sec-modal-add-card {
     width: 384px;
     right: 0;
@@ -2448,13 +1314,13 @@ section.sec-modal-add-card .btn-modal-close .icon-close-color:hover {
   display: grid;
   grid-template-rows: 14rem calc(100vh - 22rem);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .sec-modal-add-card-container {
     width: 100%;
     right: 0;
   }
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .sec-modal-add-card-container {
     grid-template-rows: 14rem calc(100vh - 22rem);
   }
@@ -2585,7 +1451,7 @@ section.sec-modal-add-card.shopping-card {
   overflow-y: scroll;
   box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.741);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   section.sec-modal-add-card.shopping-card {
     width: 384px;
     right: 0;
@@ -2686,7 +1552,7 @@ section.sec-modal-add-card.shopping-card {
   gap: 2rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .menu-header-phone-shopping {
     padding: 0.5rem 2rem;
   }
@@ -2774,7 +1640,7 @@ section.sec-modal-add-card .btn-modal-close {
   width: 100vw;
   height: calc(100vh - 4rem);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-myOrders {
     display: flex;
     justify-content: center;
@@ -2788,7 +1654,7 @@ section.sec-modal-add-card .btn-modal-close {
   flex-direction: column;
   gap: 2rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-myOrders-container {
     width: 40%;
     height: 80%;
@@ -2886,4 +1752,7 @@ section.sec-modal-add-card .btn-modal-close {
   box-sizing: border-box;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0001);
   border-radius: 10px;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*
+*//*# sourceMappingURL=styles.css.map */

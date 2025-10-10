@@ -17,7 +17,7 @@ section.sec-modal-add-card.shopping-card {
   overflow-y: scroll;
   box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.741);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   section.sec-modal-add-card.shopping-card {
     width: 384px;
     right: 0;
@@ -118,7 +118,7 @@ section.sec-modal-add-card.shopping-card {
   gap: 2rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .menu-header-phone-shopping {
     padding: 0.5rem 2rem;
   }

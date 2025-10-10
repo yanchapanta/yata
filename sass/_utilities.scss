@@ -1,5 +1,5 @@
-@import 'values';
-@import 'mixins';
+@use 'values' as *;
+@use 'mixins' as *;
 
 // FUENTES
 %text-hours {
@@ -7,7 +7,7 @@
 	font-style: normal;
 	font-weight: bold;
 	font-size: 12px;
-	line-height: 15px;
+	line-height: 15px;	
 }
 %text-yardsale {
 	font-family: 'Quicksand', sans-serif;

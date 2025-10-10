@@ -1,5 +1,5 @@
-@import 'values';
-@import 'mixins';
+@use  'values'as *;
+@use  'mixins'as *;
 //GENERALES
 
 .text-gmail{

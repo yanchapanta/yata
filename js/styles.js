@@ -114,13 +114,13 @@
 		}
 		//simulacion de base de datos
 		const arrayProducts = [
-			{ id: '001', image: 'difusor_maracuya', name: 'Roberto Morales', price: '$120,00' },
-			{ id: '002', image: 'pro1', name: 'Round shelf', price: '$120,00' },
-			{ id: '003', image: 'pro2', name: 'Arnol shelf', price: '$150,00' },
-			{ id: '004', image: 'pro3', name: 'Rebeca shelf', price: '$220,00' },
-			{ id: '005', image: 'pro4', name: 'Rebeca shelf', price: '$220,00' },
-			{ id: '006', image: 'pro5', name: 'Rebeca shelf', price: '$220,00' },
-			{ id: '007', image: 'pro5', name: 'Marco yanchapanta', price: '$160,00' }
+			{ id: '001', image: 'difusor_exagonal', name: 'Roberto Morales', price: '$120,00' },
+			{ id: '002', image: 'difusor_manzana', name: 'Round shelf', price: '$120,00' },
+			{ id: '003', image: 'difusor_cilindrico', name: 'Arnol shelf', price: '$150,00' },
+			{ id: '004', image: 'difusor_circular', name: 'Rebeca shelf', price: '$220,00' },
+			{ id: '005', image: 'difusor_redondo', name: 'Rebeca shelf', price: '$220,00' },
+			{ id: '006', image: 'difusor_redondo', name: 'Rebeca shelf', price: '$220,00' },
+			{ id: '007', image: 'difusor_maracuya', name: 'Marco yanchapanta', price: '$160,00' }
 		];
 		//Redireccionando productos dependiendo si esta logeado solo para index o home 1
 		document.addEventListener('DOMContentLoaded', (e) => {

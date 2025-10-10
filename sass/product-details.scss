@@ -1,6 +1,7 @@
-@import 'values';
-@import 'utilities';
-@import 'mixins';
+@use  'values'as *;
+@use  'utilities'as *;
+@use  'mixins'as *;
+
 //GENERALES
 .card-price {
 	font-family: $fontRoboto;
@@ -67,11 +68,11 @@ section.sec-modal-add-card {
 }
 .sec-modal-add-card-container {
 	display: grid;
+	grid-template-rows: 14rem calc(100vh - 22rem);
 	@include desktop() {
 		width: 100%;
 		right: 0;
 	}
-	grid-template-rows: 14rem calc(100vh - 22rem);
 	@include desktop (){
 		grid-template-rows: 14rem calc(100vh - 22rem);
 

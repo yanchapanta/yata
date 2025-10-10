@@ -1,5 +1,6 @@
-@import 'mixins';
-@import 'utilities';
+@use 'mixins' as *;
+@use 'utilities' as *;
+@use 'values' as *;
 
 
 
@@ -10,10 +11,10 @@
 	background-color: $gray-alpha-color;
 	padding: 0.5rem 1rem;
 	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	@include desktop(){
 		display: none;
 	}
-	grid-template-columns: repeat(3, 1fr);
 	& > div {
 		&:first-child {
 			justify-self: start;

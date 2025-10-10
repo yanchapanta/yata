@@ -1,10 +1,11 @@
-@import 'values';
+@use 'values' as *;
 
 @mixin centrarX($space) {
 	display: flex;
 	align-items: center;
 	gap: $space;
 }
+
 
 @mixin btn-log() {
 	display: flex;

@@ -1,5 +1,5 @@
-@import 'values';
-@import 'mixins';
+@use 'values' as *;
+@use 'mixins' as *;
 
 .section-myOrders {
 	width: 100vw;
