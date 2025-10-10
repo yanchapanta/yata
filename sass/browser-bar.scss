@@ -1,0 +1,39 @@
+@import 'mixins';
+@import 'utilities';
+
+
+
+//----------------- CABECERA PHONE  ------------//
+.browser-bar {
+	width: 100vw;
+	height: $bar-mobil-height;
+	background-color: $gray-alpha-color;
+	padding: 0.5rem 1rem;
+	display: grid;
+	@include desktop(){
+		display: none;
+	}
+	grid-template-columns: repeat(3, 1fr);
+	& > div {
+		&:first-child {
+			justify-self: start;
+			-ms-flex-item-align: center;
+			    align-self: center;
+
+			@extend %text-hours;
+		}
+		&:nth-child(2) {
+			-ms-flex-item-align: end;
+			    align-self: end;
+			justify-self: end;
+			@include centrarX(0.5rem);
+			@extend %text-yardsale;
+			color: #000000;			
+		}
+		&:last-child {
+			justify-self: end;
+			@include centrarX(0.5rem);
+		}
+	}	
+}
+

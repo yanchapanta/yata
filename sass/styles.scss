@@ -1,0 +1,19 @@
+@import 'values';
+@import 'mixins';
+@import 'general';
+@import 'utilities';
+@import 'browser-bar.scss';
+@import 'login.scss';
+@import 'acount.scss';
+
+
+@import 'menu.scss';
+@import 'home-1.scss';
+@import 'product-details.scss';
+@import 'shopping-card-1.scss';
+@import 'menu-1.scss';
+@import 'my-orders.scss';
+@import 'login-error.scss';
+
+//  sass --watch sass:dist/css
+

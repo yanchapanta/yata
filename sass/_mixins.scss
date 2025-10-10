@@ -1,0 +1,245 @@
+@import 'values';
+
+@mixin centrarX($space) {
+	display: flex;
+	align-items: center;
+	gap: $space;
+}
+
+@mixin btn-log() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+
+	background: #acd9b2;
+	border: 1px solid #acd9b2;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0001);
+	border-radius: 10px;
+
+	font-family: 'Quicksand', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #ffffff;
+	transition: background-color 0.3s linear;
+	&:hover {
+		background-color: #95bd9a;
+		text-decoration: none;
+	}
+}
+@mixin btn-menu() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+
+	border: 1px solid #acd9b2;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	font-family: $font1;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	color: #acd9b2;
+	transition: background-color 0.3s linear, color 0.3s linear;
+	&:hover {
+		background-color: #acd9b2;
+		text-decoration: none;
+		color: aliceblue;
+	}
+}
+@mixin input() {
+	display: flex;
+	padding: 1rem 1rem;
+
+	background: #f7f7f7;
+	border: 1px solid #f7f7f7;
+	outline: none;
+	box-sizing: border-box;
+	border-radius: 10px;
+	transition: background-color 0.3s linear;
+	&:focus {
+		// color: #ffffff;
+		background-color: #e7dfdf;
+		// text-decoration: none;
+	}
+}
+@mixin btn-sign() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+
+	border: 1px solid #acd9b2;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.0001));
+	border-radius: 10px;
+	font-family: 'Quicksand', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #acd9b2;
+	transition: background-color 0.3s linear;
+	&:hover {
+		color: #ffffff;
+		background-color: #95bd9a;
+		text-decoration: none;
+	}
+}
+@mixin btn-link() {
+	font-family: $font1;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: right;
+	color: #25b138;
+	transition: background-color 0.3s linear;
+	&:hover {
+	}
+}
+@mixin btn-add-card() {
+	padding: 1rem 2rem;
+
+	font-family: $font1;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: #ffffff;
+
+	background: #acd9b2;
+	border: 1px solid #acd9b2;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0001);
+	border-radius: 10px;
+	transition: background-color 0.3s linear;
+	&:hover {
+	}
+}
+@mixin btn-link-resend() {
+	font-family: $font1;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+
+	color: #797979;
+}
+@mixin btn-remove() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+	font-family: $font1;
+	background: #ffffff;
+	mix-blend-mode: normal;
+
+	border-radius: 10px;
+	text-decoration: none;
+	opacity: 0.8;
+	&:hover {
+		opacity: 0.9;
+		text-decoration: none;
+	}
+}
+
+//MEDIA QUERYS
+@mixin phone {
+	@media only screen and (min-width: #{$phone}) {
+		@content;
+	}
+}
+@mixin phonev1 {
+	@media only screen and (min-width: #{$phonev1}) {
+		@content;
+	}
+}
+@mixin phonev2 {
+	@media only screen and (min-width: #{$phonev2}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media only screen and (min-width: #{$tablet}) {
+		@content;
+	}
+}
+@mixin tabletv1 {
+	@media only screen and (min-width: #{$tsabletv1}) {
+		@content;
+	}
+}
+@mixin tabletv2 {
+	@media only screen and (min-width: #{$tabletv2}) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media only screen and (min-width: #{$desktop}) {
+		@content;
+	}
+}
+
+@mixin text1() {
+	font-family: #{$font1};
+	font-style: normal;
+	font-weight: Bold;
+	font-size: 14px;
+	line-height: 18px;
+	color: $black-color;
+}
+
+@mixin text-gmail() {
+	font-family: #{$font1};
+	font-family: Quicksand;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+}
+
+@mixin title-1 {
+	font-family: #{$font1};
+	font-weight: bold;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 100%;
+	line-height: 22px;
+	color: $black-color;
+}
+@mixin title-submenu-dropdown {
+	font-family: #{$font1};
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	/* identical to box height */
+
+	text-align: right;
+
+	color: #000000;
+}
+@mixin box-shadow-1 {
+	box-shadow: $box-shadow1;
+}
+@mixin bar-top {
+	mix-blend-mode: normal;
+opacity: 0.1;
+border-top: 1px solid #979797;
+}

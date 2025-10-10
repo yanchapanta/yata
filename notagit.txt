@@ -1,0 +1,11 @@
+
+git init
+echo "# yata" >> README.md
+git branch -M main
+git remote add origin https://github.com/yanchapanta/yata.git
+git add .
+git commit -m "actualizacion por configuración http"
+git push origin main
+git status
+git fetch origin
+git push origin main

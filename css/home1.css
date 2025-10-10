@@ -1,0 +1,230 @@
+.btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.btn-search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn-search input:focus {
+  font-weight: 500;
+  color: #797979;
+}
+
+.btn-order label {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.btn-order select {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: white;
+  border: none;
+  color: #797979;
+  outline: none;
+  font-weight: normal;
+}
+.btn-order select:focus {
+  outline: 1px solid #F7F7F7;
+}
+
+.bg {
+  background: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.section-home {
+  width: 100%;
+  height: calc(100vh - 4rem - 4rem);
+}
+
+.section-home-container {
+  width: inherit;
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+
+.menu-home1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-x: scroll;
+  width: 330px;
+}
+@media only screen and (min-width: 64em) {
+  .menu-home1 {
+    display: none;
+  }
+}
+.menu-home1 .menu {
+  width: 500px;
+  gap: 1.5rem;
+}
+.menu-home1::-webkit-scrollbar {
+  background-color: transparent;
+  display: none;
+}
+
+.search-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media only screen and (min-width: 64em) {
+  .search-header {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 1rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+}
+
+.cards {
+  width: 100%;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 160px);
+  grid-auto-rows: 192px;
+  gap: 1rem;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 18.75em) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, 162px);
+    grid-auto-rows: 194px;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, 178px);
+    grid-auto-rows: 210px;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, 244px);
+    grid-auto-rows: 276px;
+  }
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card-img {
+  width: inherit;
+  height: 160px;
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.741);
+  border-radius: 20px;
+  overflow: hidden;
+  mix-blend-mode: normal;
+  position: relative;
+}
+@media only screen and (min-width: 18.75em) {
+  .card-img {
+    height: 162px;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  .card-img {
+    height: 178px;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .card-img {
+    height: 244px;
+  }
+}
+.card-img img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card-flex > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.btn-remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: "Quicksand", sans-serif;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border-radius: 10px;
+  text-decoration: none;
+  opacity: 0.8;
+  display: none;
+  width: 147px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.btn-remove:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.card-img:hover .btn-remove {
+  display: flex;
+}
+
+/*# sourceMappingURL=home1.css.map */

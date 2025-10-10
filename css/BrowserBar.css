@@ -1,0 +1,95 @@
+.browser-bar > div:first-child {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.browser-bar > div:nth-child(2) {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.icon {
+  fill: #797979;
+  -webkit-transition: fill 0.3s linear;
+  -o-transition: fill 0.3s linear;
+  transition: fill 0.3s linear;
+}
+
+.icon .icon-menu-color {
+  -webkit-transition: fill 0.3s linear;
+  -o-transition: fill 0.3s linear;
+  transition: fill 0.3s linear;
+}
+
+.icon:hover .icon-menu-color {
+  fill: #000000;
+}
+
+.icon-close-color {
+  fill: #797979;
+}
+
+.icon-close .icon-close-color {
+  -webkit-transition: fill 0.3s linear;
+  -o-transition: fill 0.3s linear;
+  transition: fill 0.3s linear;
+}
+
+.icon-close:hover .icon-close-color {
+  fill: #000000;
+}
+
+.card-icon-shopping .card-icon-shopping-hover {
+  -webkit-transition: fill 0.3s linear, stroke 0.3s linear;
+  -o-transition: fill 0.3s linear, stroke 0.3s linear;
+  transition: fill 0.3s linear, stroke 0.3s linear;
+}
+
+.card-icon-shopping:hover .card-icon-shopping-hover {
+  fill: #81A385;
+  stroke: #81A385;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.browser-bar {
+  width: 100vw;
+  height: 4rem;
+  background-color: #F7F7F7;
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (min-width: 64em) {
+  .browser-bar {
+    display: none;
+  }
+}
+.browser-bar > div:first-child {
+  justify-self: start;
+  align-self: center;
+}
+.browser-bar > div:nth-child(2) {
+  align-self: end;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #000000;
+}
+.browser-bar > div:last-child {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/*# sourceMappingURL=BrowserBar.css.map */

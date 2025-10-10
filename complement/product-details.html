@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product details</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- menu de desktop -->
+    <div class="menu-header menu-header-phone">
+        <div class="btn-burguer" style="display: var(--hidden-desktop);">
+            <img src="../img/icon/icon_menu.svg" alt="logotipo">
+        </div>
+        <div class="logotipo" style="display: block;">
+            <img src="../img/logo/logo_yard_sale.svg" alt="logotipo">
+        </div>
+        <nav class="menu">
+            <a class="btn-menu" href="#">All</a>
+            <a href="#">Clothes</a>
+            <a href="#">Electronics</a>
+            <a href="#">Toys</a>
+            <a href="#">Others</a>
+        </nav>
+
+        <div>
+            <!-- opcines de gmail de boostrap-->
+            <div class="dropdown btn-order" style="display: var(--hidden-phone);">
+                <button class="btn btn-white dropdown-toggle text-gmail" style="background-color: white;outline: none;"
+                    type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    camilayokoo@gmail.com
+                </button>
+                <div class="dropdown-menu box-shadown-1" aria-labelledby="dropdownMenuButton"
+                    style="margin-top:1rem;border-radius: 5px; left: 0;right: 0rem;">
+                    <a class="dropdown-item title-submenu-dropdown p-3" href="my-orders.html">My orders</a>
+                    <a class="dropdown-item title-submenu-dropdown p-3" href="my-acount.html">My account</a>
+                    <a class="dropdown-item btn-link bar-top-1 p-3" href="../index.html">Sign out</a>
+                </div>
+            </div>
+            <div class="icon">
+                <svg width="30" height="27" viewBox="0 0 30 27" class="icon-menu-color" fill="blue"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="icon-menu-color"
+                        d="M4.5 2C3.94772 2 3.5 2.44772 3.5 3C3.5 3.55228 3.94772 4 4.5 4V2ZM6.72222 3L7.7026 2.80288C7.60872 2.33593 7.19852 2 6.72222 2V3ZM6.18629 5.40762C6.29515 5.94907 6.82233 6.29975 7.36378 6.19089C7.90523 6.08202 8.25591 5.55484 8.14705 5.01339L6.18629 5.40762ZM8.94444 13.0525C8.39216 13.0525 7.94444 13.5002 7.94444 14.0525C7.94444 14.6048 8.39216 15.0525 8.94444 15.0525V13.0525ZM20.0556 14.0525V15.0525C20.4336 15.0525 20.7793 14.8394 20.949 14.5016L20.0556 14.0525ZM24.5 5.21051L25.3935 5.65961C25.5493 5.34962 25.5333 4.98101 25.3512 4.68568C25.1691 4.39035 24.847 4.21051 24.5 4.21051V5.21051ZM7.16667 4.21051C6.61438 4.21051 6.16667 4.65822 6.16667 5.21051C6.16667 5.76279 6.61438 6.21051 7.16667 6.21051V4.21051ZM7.96406 14.2496C8.07293 14.7911 8.60011 15.1418 9.14156 15.0329C9.68301 14.924 10.0337 14.3969 9.92482 13.8554L7.96406 14.2496ZM8.14705 5.01339C8.03818 4.47194 7.511 4.12126 6.96955 4.23012C6.4281 4.33899 6.07742 4.86617 6.18629 5.40762L8.14705 5.01339ZM9.64968 14.7615C10.0412 14.372 10.0429 13.7388 9.65342 13.3473C9.26393 12.9557 8.63076 12.9541 8.23921 13.3436L9.64968 14.7615ZM6.39667 16.5869L5.69143 15.8779L6.39667 16.5869ZM20.0556 19.4735C20.6078 19.4735 21.0556 19.0258 21.0556 18.4735C21.0556 17.9213 20.6078 17.4735 20.0556 17.4735V19.4735ZM20.0556 18.4735H19.0556C19.0556 18.7397 19.1616 18.9948 19.3503 19.1825L20.0556 18.4735ZM22.2778 20.684L21.5725 21.393C21.7599 21.5794 22.0135 21.684 22.2778 21.684V20.684ZM11.1667 20.684L10.3018 20.1821C10.2133 20.3345 10.1667 20.5077 10.1667 20.684H11.1667ZM11.1667 22.8945H10.1667C10.1667 23.0709 10.2133 23.244 10.3018 23.3965L11.1667 22.8945ZM4.5 4H6.72222V2H4.5V4ZM5.74184 3.19712L6.18629 5.40762L8.14705 5.01339L7.7026 2.80288L5.74184 3.19712ZM8.94444 15.0525H20.0556V13.0525H8.94444V15.0525ZM20.949 14.5016L25.3935 5.65961L23.6065 4.7614L19.1621 13.6034L20.949 14.5016ZM24.5 4.21051H7.16667V6.21051H24.5V4.21051ZM9.92482 13.8554L8.14705 5.01339L6.18629 5.40762L7.96406 14.2496L9.92482 13.8554ZM8.23921 13.3436L5.69143 15.8779L7.1019 17.2958L9.64968 14.7615L8.23921 13.3436ZM5.69143 15.8779C4.35112 17.2111 5.31103 19.4735 7.18222 19.4735V17.4735C7.14208 17.4735 7.12553 17.4635 7.11734 17.4578C7.10473 17.4489 7.08938 17.4322 7.07888 17.407C7.06837 17.3817 7.06775 17.3602 7.07003 17.3471C7.07136 17.3395 7.07483 17.3228 7.1019 17.2958L5.69143 15.8779ZM7.18222 19.4735H20.0556V17.4735H7.18222V19.4735ZM21.0556 18.4735C21.0556 17.81 21.5978 17.263 22.2778 17.263V15.263C20.5032 15.263 19.0556 16.6954 19.0556 18.4735H21.0556ZM22.2778 17.263C22.9578 17.263 23.5 17.81 23.5 18.4735H25.5C25.5 16.6954 24.0524 15.263 22.2778 15.263V17.263ZM23.5 18.4735C23.5 19.1371 22.9578 19.684 22.2778 19.684V21.684C24.0524 21.684 25.5 20.2516 25.5 18.4735H23.5ZM22.983 19.9751L20.7608 17.7646L19.3503 19.1825L21.5725 21.393L22.983 19.9751ZM12.0315 21.186C12.3068 20.7119 12.8711 20.4771 13.4088 20.6204L13.9239 18.6878C12.5185 18.3133 11.0324 18.9233 10.3018 20.1821L12.0315 21.186ZM13.4088 20.6204C13.9456 20.7635 14.3134 21.2451 14.3134 21.7893H16.3134C16.3134 20.3325 15.3301 19.0627 13.9239 18.6878L13.4088 20.6204ZM14.3134 21.7893C14.3134 22.3335 13.9456 22.8151 13.4088 22.9582L13.9239 24.8907C15.3301 24.5159 16.3134 23.2461 16.3134 21.7893H14.3134ZM13.4088 22.9582C12.8711 23.1015 12.3068 22.8667 12.0315 22.3926L10.3018 23.3965C11.0324 24.6553 12.5185 25.2653 13.9239 24.8907L13.4088 22.9582ZM12.1667 22.8945V20.684H10.1667V22.8945H12.1667Z"
+                        fill="black"></path>
+                    <circle cx="24" cy="5" r="5" class="icon-menu-color" fill="#ACD9B2"></circle>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+    <section class="section-home container-1">
+        <div class="section-home-container">
+            <div class="search-header">
+                <!-- btn buscar -->
+                <form action="#">
+                    <div class="btn-search bg">
+                        <label for="search">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" class="btn-search-hover"
+                                    d="M12.7979 10.9948C12.595 10.7919 12.5481 10.4194 12.6999 10.1694C12.6999 10.1694 12.7688 10.0766 12.9113 9.78552C13.3524 8.88426 13.6 7.87105 13.6 6.8C13.6 3.04446 10.5555 0 6.8 0C3.04446 0 0 3.04446 0 6.8C0 10.5555 3.04446 13.6 6.8 13.6C7.86726 13.6 8.8771 13.3541 9.77595 12.9159C10.0705 12.7723 10.1643 12.7027 10.1643 12.7027C10.4177 12.5512 10.7889 12.592 10.9948 12.7979L14.8234 16.6266C15.3214 17.1245 16.1286 17.1245 16.6266 16.6266C17.1245 16.1286 17.1245 15.3214 16.6266 14.8234L12.7979 10.9948ZM11.05 6.8C11.05 9.14721 9.14721 11.05 6.8 11.05C4.45279 11.05 2.55 9.14721 2.55 6.8C2.55 4.45279 4.45279 2.55 6.8 2.55C9.14721 2.55 11.05 4.45279 11.05 6.8Z"
+                                    fill="#C7C7C7" />
+                            </svg>
+                        </label>
+                        <input id="search" type="text" placeholder="Search product" required>
+                    </div>
+                </form>
+
+                <div class="menu-home1" style="display: var(--hidden-desktop);">
+                    <nav class="menu">
+                        <a class="btn-menu " href="#">All</a>
+                        <a href="#">Clothes</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Furniture</a>
+                        <a href="#">Toys</a>
+                        <a href="#">Others</a>
+                    </nav>
+                </div>
+                <div class="btn-order">
+                    <label for="order">Order:</label>
+
+                    <select id="order">
+                        <option>Most recent</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+            <!-- productos -->
+            <article>
+                <div class="cards">
+                    <div id="idCardProducts" class="cards-container">
+                        <!-- forma uno de abrir el modal la forma dos en ta en el archivo styeles.js -->
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- MODAL detalle de producto-->
+    <section id="modal-add-card" class="sec-modal-add-card">
+        <a href="#close-001" class="icon-close btn-modal-close throw-circle" style="opacity: .7;">
+            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-close-color"
+                    d="M7.83868 0.240629C8.16564 -0.0802096 8.70981 -0.0802096 9.04821 0.240629C9.37517 0.550628 9.37517 1.06657 9.04821 1.37585L2.91521 7.19068H23.1533C23.625 7.1914 24 7.54693 24 7.99422C24 8.44151 23.625 8.8086 23.1533 8.8086H2.91521L9.04821 14.6126C9.37517 14.9334 9.37517 15.4501 9.04821 15.7594C8.70981 16.0802 8.16488 16.0802 7.83868 15.7594L0.253796 8.56797C-0.0845985 8.25797 -0.0845985 7.74203 0.253796 7.43275L7.83868 0.240629Z"
+                    fill="#C7C7C7" />
+            </svg>
+        </a>
+        <div class="sec-modal-add-card-container">
+            <div class="modal-add-card-carousel">
+                <img src="../img/product/pro3.jpg" alt="product">
+            </div>
+            <div class="modal-add-card-info">
+                <div class="modal-add-card-row">
+                    <div>
+                        <p class="card-price">$120,00</p>
+                        <p class="card-name">Round shelf</p>
+                    </div>
+                    <p>
+                        With its functional and practical interior, this refrigerator also fulfills a decorative
+                        function,
+                        adding
+                        personality and a retro-vintage aesthetic to your kitchen or workplace.
+                    </p>
+                </div>
+                <div class="btn-add-card">
+                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2V0ZM3.5 1L4.48639 0.835601C4.40603 0.353413 3.98884 0 3.5 0V1ZM3.01361 4.1644C3.1044 4.70917 3.61963 5.07719 4.1644 4.98639C4.70917 4.8956 5.07719 4.38037 4.98639 3.8356L3.01361 4.1644ZM6.05128 13C5.499 13 5.05128 13.4477 5.05128 14C5.05128 14.5523 5.499 15 6.05128 15V13ZM18.8718 14V15C19.2469 15 19.5904 14.7901 19.7616 14.4563L18.8718 14ZM24 4L24.8898 4.45632C25.0488 4.14631 25.035 3.77591 24.8533 3.47862C24.6717 3.18132 24.3484 3 24 3V4ZM4 3C3.44772 3 3 3.44772 3 4C3 4.55228 3.44772 5 4 5V3ZM5.01942 14.1961C5.12773 14.7377 5.65456 15.0889 6.19612 14.9806C6.73768 14.8723 7.08889 14.3454 6.98058 13.8039L5.01942 14.1961ZM4.98058 3.80388C4.87227 3.26232 4.34544 2.91111 3.80388 3.01942C3.26232 3.12773 2.91111 3.65456 3.01942 4.19612L4.98058 3.80388ZM6.99062 14.713C7.38439 14.3257 7.38968 13.6926 7.00243 13.2988C6.61518 12.9051 5.98204 12.8998 5.58827 13.287L6.99062 14.713ZM3.37491 16.8663L2.67373 16.1533H2.67373L3.37491 16.8663ZM19 20C19.5523 20 20 19.5523 20 19C20 18.4477 19.5523 18 19 18V20ZM19 18.5H18C18 18.7652 18.1054 19.0196 18.2929 19.2071L19 18.5ZM21.5 21L20.7929 21.7071C20.9804 21.8946 21.2348 22 21.5 22V21ZM8 21.2501L7.14966 20.7239C7.05183 20.882 7 21.0642 7 21.2501H8ZM8 23.7499H7C7 23.9358 7.05183 24.118 7.14966 24.2761L8 23.7499ZM1 2H3.5V0H1V2ZM2.51361 1.1644L3.01361 4.1644L4.98639 3.8356L4.48639 0.835601L2.51361 1.1644ZM6.05128 15H18.8718V13H6.05128V15ZM19.7616 14.4563L24.8898 4.45632L23.1102 3.54368L17.982 13.5437L19.7616 14.4563ZM24 3H4V5H24V3ZM6.98058 13.8039L4.98058 3.80388L3.01942 4.19612L5.01942 14.1961L6.98058 13.8039ZM5.58827 13.287L2.67373 16.1533L4.07609 17.5792L6.99062 14.713L5.58827 13.287ZM2.67373 16.1533C1.20969 17.5931 2.28159 20 4.27355 20V18C4.19512 18 4.14584 17.9786 4.11231 17.9554C4.07455 17.9292 4.04157 17.8895 4.02086 17.8403C4.00015 17.7911 3.99633 17.7437 4.00306 17.7055C4.00881 17.6728 4.02472 17.6298 4.07609 17.5792L2.67373 16.1533ZM4.27355 20H19V18H4.27355V20ZM20 18.5C20 17.6716 20.6716 17 21.5 17V15C19.567 15 18 16.567 18 18.5H20ZM21.5 17C22.3284 17 23 17.6716 23 18.5H25C25 16.567 23.433 15 21.5 15V17ZM23 18.5C23 19.3284 22.3284 20 21.5 20V22C23.433 22 25 20.433 25 18.5H23ZM22.2071 20.2929L19.7071 17.7929L18.2929 19.2071L20.7929 21.7071L22.2071 20.2929ZM8.85034 21.7764C9.21311 21.1902 9.99445 20.8613 10.7715 21.0556L11.2565 19.1153C9.69071 18.7238 7.99964 19.3504 7.14966 20.7239L8.85034 21.7764ZM10.7715 21.0556C11.5401 21.2477 12 21.8697 12 22.5H14C14 20.8675 12.8308 19.5088 11.2565 19.1153L10.7715 21.0556ZM12 22.5C12 23.1303 11.5401 23.7523 10.7715 23.9444L11.2565 25.8847C12.8308 25.4912 14 24.1325 14 22.5H12ZM10.7715 23.9444C9.99445 24.1387 9.21311 23.8098 8.85034 23.2236L7.14966 24.2761C7.99964 25.6496 9.69071 26.2762 11.2565 25.8847L10.7715 23.9444ZM9 23.7499V21.2501H7V23.7499H9Z"
+                            fill="white" />
+                    </svg>
+                    <p>
+                        Add to cart
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MODAL orders de productos -->
+    <section id="modal-orders-card" class="sec-modal-add-card shopping-card">
+
+        <a href="#close-001" class="icon-close btn-modal-close throw-circle">
+            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-close-color"
+                    d="M7.83868 0.240629C8.16564 -0.0802096 8.70981 -0.0802096 9.04821 0.240629C9.37517 0.550628 9.37517 1.06657 9.04821 1.37585L2.91521 7.19068H23.1533C23.625 7.1914 24 7.54693 24 7.99422C24 8.44151 23.625 8.8086 23.1533 8.8086H2.91521L9.04821 14.6126C9.37517 14.9334 9.37517 15.4501 9.04821 15.7594C8.70981 16.0802 8.16488 16.0802 7.83868 15.7594L0.253796 8.56797C-0.0845985 8.25797 -0.0845985 7.74203 0.253796 7.43275L7.83868 0.240629Z"
+                    fill="#C7C7C7" />
+            </svg>
+        </a>
+        <div class="subtitle-shopping mt-1" style="display: var(--hidden-phone);width: 74%;">
+            <h2>Shopping cart</h2>
+        </div>
+
+        <div class="shopping-card-container">
+            <div class="shopping-card-row">
+                <div class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');">
+                </div>
+                <div class="shopping-card-row-info">
+                    <p class="card-name">Round shelf</p>
+                    <p class="card-price">$ 120,00</p>
+                </div>
+                <a href="complement/MyCount.html">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.35">
+                            <path class="icon-close-color"
+                                d="M0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L0.292893 12.2929ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L12.2929 13.7071ZM1.70711 13.7071L13.7071 1.70711L12.2929 0.292893L0.292893 12.2929L1.70711 13.7071ZM0.292893 1.70711L12.2929 13.7071L13.7071 12.2929L1.70711 0.292893L0.292893 1.70711Z"
+                                fill="#C7C7C7" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="shopping-card-row">
+                <div class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');">
+                </div>
+                <div class="shopping-card-row-info">
+                    <p class="card-name">Round shelf</p>
+                    <p class="card-price">$ 120,00</p>
+                </div>
+                <a href="complement/MyCount.html">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.35">
+                            <path class="icon-close-color"
+                                d="M0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L0.292893 12.2929ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L12.2929 13.7071ZM1.70711 13.7071L13.7071 1.70711L12.2929 0.292893L0.292893 12.2929L1.70711 13.7071ZM0.292893 1.70711L12.2929 13.7071L13.7071 12.2929L1.70711 0.292893L0.292893 1.70711Z"
+                                fill="#C7C7C7" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="shopping-card-row">
+                <div class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');">
+                </div>
+                <div class="shopping-card-row-info">
+                    <p class="card-name">Round shelf</p>
+                    <p class="card-price">$ 120,00</p>
+                </div>
+                <a href="complement/MyCount.html">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.35">
+                            <path class="icon-close-color"
+                                d="M0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L0.292893 12.2929ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L12.2929 13.7071ZM1.70711 13.7071L13.7071 1.70711L12.2929 0.292893L0.292893 12.2929L1.70711 13.7071ZM0.292893 1.70711L12.2929 13.7071L13.7071 12.2929L1.70711 0.292893L0.292893 1.70711Z"
+                                fill="#C7C7C7" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="shopping-card-row">
+                <div class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');">
+                </div>
+                <div class="shopping-card-row-info">
+                    <p class="card-name">Round shelf</p>
+                    <p class="card-price">$ 120,00</p>
+                </div>
+                <a href="complement/MyCount.html">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.35">
+                            <path class="icon-close-color"
+                                d="M0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L0.292893 12.2929ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L12.2929 13.7071ZM1.70711 13.7071L13.7071 1.70711L12.2929 0.292893L0.292893 12.2929L1.70711 13.7071ZM0.292893 1.70711L12.2929 13.7071L13.7071 12.2929L1.70711 0.292893L0.292893 1.70711Z"
+                                fill="#C7C7C7" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="shopping-card-row">
+                <div class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');">
+                </div>
+                <div class="shopping-card-row-info">
+                    <p class="card-name">Round shelf</p>
+                    <p class="card-price">$ 120,00</p>
+                </div>
+                <a href="complement/MyCount.html">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.35">
+                            <path class="icon-close-color"
+                                d="M0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L0.292893 12.2929ZM13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L13.7071 1.70711ZM1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L12.2929 13.7071ZM1.70711 13.7071L13.7071 1.70711L12.2929 0.292893L0.292893 12.2929L1.70711 13.7071ZM0.292893 1.70711L12.2929 13.7071L13.7071 12.2929L1.70711 0.292893L0.292893 1.70711Z"
+                                fill="#C7C7C7" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="shopping-card-total">
+                <p class="card-price">Total</p>
+                <p class="card-price">$ 560.00</p>
+            </div>
+            <div class="form-row">
+                <input class="btn-log" type="submit" value="Checkout">
+            </div>
+
+        </div>
+    </section>
+
+    <script src="../js/styles.js"></script>
+    <!-- js bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
