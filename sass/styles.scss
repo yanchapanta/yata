@@ -1,19 +1,21 @@
-@import 'values';
-@import 'mixins';
-@import 'general';
-@import 'utilities';
-@import 'browser-bar.scss';
-@import 'login.scss';
-@import 'acount.scss';
+@use 'values';
+@use 'mixins' as *;
+@use 'general' as *;
+@use 'utilities' as *;
+@use 'browser-bar.scss' as *;
+@use 'login.scss' as *;
+@use 'acount.scss' as *;
+@use 'menu.scss' as *;
+@use 'home-1.scss' as *;
+@use 'product-details.scss' as *;
+@use 'shopping-card-1.scss' as *;
+@use 'menu-1.scss' as *;
+@use 'my-orders.scss' as *;
 
+@use 'login-error.scss' as *;
 
-@import 'menu.scss';
-@import 'home-1.scss';
-@import 'product-details.scss';
-@import 'shopping-card-1.scss';
-@import 'menu-1.scss';
-@import 'my-orders.scss';
-@import 'login-error.scss';
+/*
+*/
 
 //  sass --watch sass:dist/css
 

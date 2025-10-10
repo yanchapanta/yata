@@ -1,6 +1,7 @@
-@import 'values';
-@import 'utilities';
-@import 'mixins';
+@use 'values' as *;
+@use 'utilities' as *;
+@use 'mixins' as *;
+
 
 //  GENERALES
 .text-title {

@@ -18,7 +18,7 @@
   overflow-x: scroll;
   width: 330px;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .menu-home1 {
     display: none;
   }
@@ -37,7 +37,7 @@
   flex-direction: column;
   gap: 1rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .search-header {
     display: grid;
     grid-template-columns: 30% 1fr;
@@ -54,7 +54,7 @@
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(163px, 350px));
-  grid-auto-rows: 253px;
+  grid-auto-rows: 30%;
   gap: 1rem;
 }
 @media only screen and (min-width: 18.75em) {
@@ -69,10 +69,10 @@
     grid-auto-rows: 209px;
   }
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .cards-container {
     grid-template-columns: repeat(5, minmax(163px, 350px));
-    grid-auto-rows: 250px;
+    grid-auto-rows: 35%;
   }
 }
 

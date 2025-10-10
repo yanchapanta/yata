@@ -1,6 +1,5 @@
-@import 'values';
-@import 'mixins';
-
+@use  'values' as *;
+@use  'mixins' as *;
 
 //------------------HOME1---------------------//
 .section-home {
@@ -66,7 +65,7 @@
 .cards-container {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(163px,350px));
-	grid-auto-rows:253px;
+	grid-auto-rows:30%;
 	gap: 1rem;
 	@include phone(){
 		grid-template-columns: repeat(2, minmax(163px,350px));
@@ -78,7 +77,7 @@
 	}
 	@include desktop(){
 		grid-template-columns: repeat(5, minmax(163px,350px));
-		grid-auto-rows:250px;
+		grid-auto-rows:35%;
 	}	
 }
 .card {

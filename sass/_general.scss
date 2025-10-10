@@ -1,10 +1,11 @@
-:root {
-	--hidden-phone: none;
-	--hidden-desktop: block;
-	@include desktop() {
-		--hidden-phone: block;
-		--hidden-desktop: none;
-	}
+// _general.scss
+@use 'mixins' as *;
+
+.element {
+  @include desktop() {
+    --hidden-phone: block;
+    --hidden-desktop: none;
+  }
 }
 
 html,

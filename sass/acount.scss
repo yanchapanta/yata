@@ -1,6 +1,7 @@
-@import 'values';
-@import 'utilities';
-@import 'mixins';
+@use 'values' as *;
+@use 'utilities' as *;
+@use 'mixins' as *;
+
 // <!-- account.scss -- formulario acount--><!-- account.scss -- formulario acount-->
 .section-acount {
 	width: 100vw;

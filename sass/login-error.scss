@@ -1,4 +1,5 @@
-@import 'values';
+@use 'values'as *;
+
 .login-erro1-label {
 	font-family: $font1;
 	font-style: normal;

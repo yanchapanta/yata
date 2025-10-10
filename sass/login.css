@@ -136,7 +136,7 @@ a:hover {
   gap: 0.5rem;
   padding: 0.7rem 1rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .btn-search {
     padding: 0.5rem 1rem;
   }
@@ -287,7 +287,7 @@ a:hover {
 .container-1 {
   padding: 1rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .container-1 {
     padding: 0rem 2rem;
   }
@@ -297,7 +297,7 @@ a:hover {
   width: 100vw;
   height: calc(100vh - 4rem);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-login {
     display: flex;
     justify-content: center;
@@ -308,7 +308,7 @@ a:hover {
   height: 100%;
   grid-template-rows: 4rem 4rem 1fr 4rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-login-container {
     width: 40%;
     height: 80%;
@@ -318,7 +318,7 @@ a:hover {
 .section-login-container .logotipo {
   justify-self: center;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-login-container .logotipo {
     display: none;
   }
@@ -327,7 +327,7 @@ a:hover {
 .section-login-btn-close {
   justify-self: end;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-login-btn-close {
     display: none;
   }

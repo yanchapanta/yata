@@ -1,6 +1,6 @@
-@import 'values';
-@import 'utilities';
-@import 'mixins';
+@use  'values' as *;
+@use  'utilities' as *;
+@use  'mixins' as *;
 //----------------- GENERALES ------------//
 
 .btn-menu {
@@ -44,7 +44,7 @@
     box-shadow: $box-shadow1;
     @include desktop(){
         padding: 0.5rem 2rem;
-        grid-template-columns: auto 2fr 1fr;
+        grid-template-columns: auto 2fr 1fr 1fr;
         gap: calc($var * 2);
         box-shadow: $box-shadow1;
         display: grid;

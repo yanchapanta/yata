@@ -84,7 +84,7 @@ a:hover {
   gap: 0.5rem;
   padding: 0.7rem 1rem;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .btn-search {
     padding: 0.5rem 1rem;
   }
@@ -151,7 +151,7 @@ a:hover {
   width: 100vw;
   height: calc(100vh - 4rem);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-acount {
     display: flex;
     justify-content: center;
@@ -164,7 +164,7 @@ a:hover {
   display: grid;
   grid-template-rows: 6rem 1fr;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 63em) {
   .section-acount-container {
     width: 30%;
     height: 70%;

@@ -1,5 +1,6 @@
-@import 'values';
-@import 'mixins';
+@use 'values' as *;
+@use 'mixins' as *;
+
 //GENERAL
 .subtitle-shopping {
 	font-family: $font1;
