@@ -1,6 +1,6 @@
 (() => {
-	//ENTRRADAS
-	const svgHtml = `
+    //ENTRRADAS
+    const svgHtml = `
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_d_0_99)">
             <circle cx="24" cy="24" r="20" fill="white"/>
@@ -24,7 +24,7 @@
             </svg>
     
     `;
-	const svgHtmlShopping = `
+    const svgHtmlShopping = `
             <svg width="49" height="48"
                                                     
                 viewBox="0 0 49 48" fill="none"
@@ -62,77 +62,136 @@
                 </svg>
     
     `;
-	setTimeout(() => {
-		let pathAbsolute = self.location.href;
-		const indexHome1 = pathAbsolute.includes('index.html');
+    setTimeout(() => {
+        let pathAbsolute = self.location.href;
+        const indexHome1 = pathAbsolute.includes('index.html');
         //redirigir boton agragar mas==== .card-icon-shopping
-		if (indexHome1) {
-			// boton agregar mas redirigir a login por que no es usuario-esto es para index
-			const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
-			cardIconEnabled.forEach((item) => {
-				item.addEventListener('click', (e) => {
-					location.href = 'complement/login.html';
-					item.classList.toggle('checked');
-					if (!item.classList.contains('checked')) {
-						console.log('yes checked');
-						item.innerHTML = svgHtmlShopping;
-					} else {
-						item.innerHTML = svgHtml;
-					}
-				});
-			});
-		} else {
+        if (indexHome1) {
+            // boton agregar mas redirigir a login por que no es usuario-esto es para index
+            const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
+            cardIconEnabled.forEach((item) => {
+                item.addEventListener('click', (e) => {
+                    location.href = 'complement/login.html';
+                    item.classList.toggle('checked');
+                    if (!item.classList.contains('checked')) {
+                        console.log('yes checked');
+                        item.innerHTML = svgHtmlShopping;
+                    } else {
+                        item.innerHTML = svgHtml;
+                    }
+                });
+            });
+        } else {
             //INGRESO DE IMAGENES A LAS TARJETAS
-			// para usuario que ye se logianron solo para home 2
-			const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
-			cardIconEnabled.forEach((item) => {
-				item.addEventListener('click', (e) => {
-					item.classList.toggle('checked');
-					if (!item.classList.contains('checked')) {
-						console.log('yes checked');
-						item.innerHTML = svgHtmlShopping;
-					} else {
-						item.innerHTML = svgHtml;
-					}
-				});
-			});
-		}
-	}, 300);
+            // para usuario que ye se logianron solo para home 2
+            const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
+            cardIconEnabled.forEach((item) => {
+                item.addEventListener('click', (e) => {
+                    item.classList.toggle('checked');
+                    if (!item.classList.contains('checked')) {
+                        console.log('yes checked');
+                        item.innerHTML = svgHtmlShopping;
+                    } else {
+                        item.innerHTML = svgHtml;
+                    }
+                });
+            });
+        }
+    }, 300);
 })(),
-	(() => {
-		const idCardProducts = document.querySelector('#idCardProducts');
+    (() => {
+        const idCardProducts = document.querySelector('#idCardProducts');
 
         //ruta absoluta
-		let pathAbsolute = self.location.href;        
-		//Redireccionar imagenes  cuando sea home-1.html === index.html 
+        let pathAbsolute = self.location.href;
+        //Redireccionar imagenes  cuando sea home-1.html === index.html 
         //y cuando esta en home-2.html
-		let imgPath = '';
-		if (pathAbsolute.includes('index.html')) {
+        let imgPath = '';
+        if (pathAbsolute.includes('index.html')) {
             imgPath = 'img';
-		} else {
-			imgPath = '../img';
-		}
-		//simulacion de base de datos
-		const arrayProducts = [
-			{ id: '001', image: 'difusor_exagonal', name: 'Roberto Morales', price: '$120,00' },
-			{ id: '002', image: 'difusor_manzana', name: 'Round shelf', price: '$120,00' },
-			{ id: '003', image: 'difusor_cilindrico', name: 'Arnol shelf', price: '$150,00' },
-			{ id: '004', image: 'difusor_circular', name: 'Rebeca shelf', price: '$220,00' },
-			{ id: '005', image: 'difusor_redondo', name: 'Rebeca shelf', price: '$220,00' },
-			{ id: '006', image: 'difusor_redondo', name: 'Rebeca shelf', price: '$220,00' },
-			{ id: '007', image: 'difusor_maracuya', name: 'Marco yanchapanta', price: '$160,00' }
-		];
-		//Redireccionando productos dependiendo si esta logeado solo para index o home 1
-		document.addEventListener('DOMContentLoaded', (e) => {
-			let pathAbsolute = self.location.href;
-			const indexHome1 = pathAbsolute.includes('index.html');
-			if (indexHome1) {
-				//´card para usuarios que no estan logeado
-				arrayProducts.forEach((product) => {
-					idCardProducts.innerHTML += `
+        } else {
+            imgPath = '../img';
+        }
+        //simulacion de base de datos
+        const arrayProducts = [
+            {
+                id: '001',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379666/difusor_fresa_lzhpzd.jpg',
+                name: 'Difusor 8ml Aroma fresa',
+                price: '$1,00'
+            },
+            {
+                id: '002',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379627/ambientador_cnuevo_r7ldau.jpg',
+                name: 'Ambientador fresa 100ml',
+                price: '$2,00'
+            },
+            {
+                id: '003',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379652/desinfectante_tentacion_enytt8.jpg',
+                name: 'Desinfectante Aroma fuerte Tentación 400ml',
+                price: '$1,00'
+            },
+            {
+                id: '004',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379625/abrillantador_universal_mfdc4f.jpg',
+                name: 'Abrillantador universal 100ml',
+                price: '$2,00'
+            },
+            {
+                id: '005',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379635/desinfectante_chicle_iyv5lf.jpg',
+                name: 'Brillo llantas 300ml',
+                price: '$1,00'
+            },
+            {
+                id: '006',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379625/almoral_tgzglg.jpg',
+                name: 'Almoral 300ml aroma fresa',
+                price: '$1,00'
+            },
+            {
+                id: '007',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379624/aceite_zjgdse.jpg',
+                name: 'Aceite vaselina aroma coco 360ml',
+                price: '$2,00'
+            },
+            {
+                id: '008',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379714/microfibra_azul_pwzpnb.jpg',
+                name: 'Toalla microfibra 50cmx50cm',
+                price: '$1,00'
+            },
+            {
+                id: '009',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379700/franela_roja_gp1szw.jpg',
+                name: 'Franela 50cmx50cm',
+                price: '$1,00'
+            },
+            {
+                id: '010',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379706/guaype_blanco_oeglxx.jpg',
+                name: 'guaipe funda 9 unidades',
+                price: '$1,00'
+            },
+            {
+                id: '011',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379708/guaype_color_ig8tfp.jpg',
+                name: 'guaipe funda 6 unudades',
+                price: '$1,00'
+            }
+        ];
+        //Redireccionando productos dependiendo si esta logeado solo para index o home 1
+        document.addEventListener('DOMContentLoaded', (e) => {
+            let pathAbsolute = self.location.href;
+            const indexHome1 = pathAbsolute.includes('index.html');
+            if (indexHome1) {
+                arrayProducts.forEach((product) => {
+                    //´card para usuarios que no estan logeado
+                    idCardProducts.innerHTML += `
                         <div class="card">
                             <div class="card-img">
-                                <img src="${imgPath}/product/${product.image}.jpg" alt="product">
+                                <img src="${product.image}" alt="product">
                             </div>
                             <div class="card-flex">
                                 <div>
@@ -177,17 +236,17 @@
                         </div>
                 
              `;
-				});
-			} else {
-           
-				//card para usuarios que estan logeado
-				arrayProducts.forEach((product) => {
-					idCardProducts.innerHTML += `
+                });
+            } else {
+
+                arrayProducts.forEach((product) => {
+                    //card para usuarios que estan logeado
+                    idCardProducts.innerHTML += `
                  <div class="card">
                      <div class="card-img">
                          <a class="btn-remove" href="#">Removed from cart</a>
                          <a href="#modal-add-card">
-                         <img src="${imgPath}/product/${product.image}.jpg" alt="product">
+                         <img src="${product.image}" alt="product">
                          </a>
                      </div>
                      <div class="card-flex">
@@ -236,7 +295,7 @@
                      </div>
                  </div>
              `;
-				});
-			}
-		});
-	})();
+                });
+            }
+        });
+    })();
