@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.42312 12.2535C0.527839 10.6777 0 8.74009 0 6.64518C0 4.06371 0.801503 1.72103 2.10438 0H12.8956C14.1985 1.72103 15 4.06371 15 6.64518C15 8.74009 14.4722 10.6777 13.5769 12.2535H1.42312Z" fill="#060F63"></path>
+<mask id="SvgjsMask1001" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="13">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.42312 12.2535C0.527839 10.6777 0 8.74009 0 6.64518C0 4.06371 0.801503 1.72103 2.10438 0H12.8956C14.1985 1.72103 15 4.06371 15 6.64518C15 8.74009 14.4722 10.6777 13.5769 12.2535H1.42312Z" fill="white"></path>
+</mask>
+<g mask="url(#mask0_824_8531)">
+<rect width="17.2987" height="2.5" transform="matrix(-0.684259 0.72924 0.72924 0.684259 13.223 -0.191071)" fill="white"></rect>
+<rect x="1.96942" y="-0.105652" width="8.95623" height="2" transform="rotate(46.8227 1.96942 -0.105652)" fill="white"></rect>
+</g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
