@@ -12,9 +12,6 @@
 @use 'menu-1.scss' as *;
 @use 'my-orders.scss' as *;
 @use 'login-error.scss' as *;
-
-/*
-*/
-
-//  sass --watch sass:dist/css
+// NUEVO: Agregar WhatsApp styles
+@use 'whatsapp' as *; 
 
