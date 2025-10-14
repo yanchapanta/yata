@@ -1,0 +1,110 @@
+// sass/_whatsapp.scss
+@use 'values' as *;
+@use 'mixins' as *;
+
+// Variables para WhatsApp
+$whatsapp-green: #25D366;
+$whatsapp-green-hover: #128C7E;
+$whatsapp-shadow: rgba(37, 211, 102, 0.3);
+
+// Estilos base del botón WhatsApp
+.card-icon-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    
+    // Estados
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px $whatsapp-shadow;
+    }
+    
+    &:active {
+        transform: scale(0.95);
+    }
+    
+    // SVG personalizado
+    svg {
+        width: 32px;
+        height: 32px;
+        transition: transform 0.3s ease;
+    }
+    
+    &:hover svg {
+        transform: scale(1.1);
+    }
+}
+
+// Variantes de tamaño
+.card-icon-whatsapp {
+    &--small {
+        width: 40px;
+        height: 40px;
+        
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    
+    &--large {
+        width: 56px;
+        height: 56px;
+        
+        svg {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+
+// Estilos para Tabler Icons
+.card-icon-whatsapp {
+    .ti-brand-whatsapp {
+        color: $whatsapp-green;
+        font-size: 32px;
+        transition: all 0.3s ease;
+    }
+    
+    &:hover .ti-brand-whatsapp {
+        color: $whatsapp-green-hover;
+        transform: scale(1.1);
+    }
+}
+
+// Responsive
+@include phone() {
+    .card-icon-whatsapp {
+        width: 44px;
+        height: 44px;
+        
+        svg {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+
+@include tablet() {
+    .card-icon-whatsapp {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+@include desktop() {
+    .card-icon-whatsapp {
+        width: 48px;
+        height: 48px;
+        
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+}

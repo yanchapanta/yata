@@ -1184,7 +1184,7 @@ a:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   border: none;
 }
@@ -1754,5 +1754,82 @@ section.sec-modal-add-card .btn-modal-close {
   border-radius: 10px;
 }
 
-/*
-*//*# sourceMappingURL=styles.css.map */
+.card-icon-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.card-icon-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+.card-icon-whatsapp:active {
+  transform: scale(0.95);
+}
+.card-icon-whatsapp svg {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+.card-icon-whatsapp:hover svg {
+  transform: scale(1.1);
+}
+
+.card-icon-whatsapp--small {
+  width: 40px;
+  height: 40px;
+}
+.card-icon-whatsapp--small svg {
+  width: 24px;
+  height: 24px;
+}
+.card-icon-whatsapp--large {
+  width: 56px;
+  height: 56px;
+}
+.card-icon-whatsapp--large svg {
+  width: 36px;
+  height: 36px;
+}
+
+.card-icon-whatsapp .ti-brand-whatsapp {
+  color: #25D366;
+  font-size: 32px;
+  transition: all 0.3s ease;
+}
+.card-icon-whatsapp:hover .ti-brand-whatsapp {
+  color: #128C7E;
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 18.75em) {
+  .card-icon-whatsapp {
+    width: 44px;
+    height: 44px;
+  }
+  .card-icon-whatsapp svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  .card-icon-whatsapp {
+    width: 46px;
+    height: 46px;
+  }
+}
+@media only screen and (min-width: 63em) {
+  .card-icon-whatsapp {
+    width: 48px;
+    height: 48px;
+  }
+  .card-icon-whatsapp:hover {
+    transform: scale(1.15);
+  }
+}/*# sourceMappingURL=styles.css.map */
