@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /complement/msmProximamente.html
+Disallow: /complement/password-recovery-1.html
+Disallow: /complement/password-recovery-2.html
+
+Sitemap: https://www.productosyata.com/sitemap.xml

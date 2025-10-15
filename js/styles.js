@@ -141,7 +141,7 @@
             {
                 id: '005',
                 image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379635/desinfectante_chicle_iyv5lf.jpg',
-                name: 'Brillo llantas 300ml',
+                name: 'Desinfectante aroma fuerte',
                 price: '$1,00'
             },
             {
