@@ -1,0 +1,63 @@
+@use 'values' as *;
+@use 'mixins' as *;
+
+// Estilos para el footer fijo en la parte inferior
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1; // Toma todo el espacio disponible
+    padding-bottom: 2rem; // Espacio antes del footer
+}
+
+.main-footer {
+    margin-top: 7rem;
+     background: #f7f7f7;
+    padding: 2rem 1rem;
+    border-top: 1px solid #e0e0e0;
+    // CAMBIA margin-top: auto por position relative
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        
+        h3 {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        p {
+            font-family: 'Quicksand', sans-serif;
+            color: #666;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+// Responsive
+@include phone() {
+    .main-footer {
+        padding: 1.5rem 1rem;
+        
+        .footer-content {
+            h3 {
+                font-size: 1.1rem;
+            }
+            
+            p {
+                font-size: 0.85rem;
+            }
+        }
+    }
+}

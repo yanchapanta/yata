@@ -250,3 +250,25 @@
             }
         });
     })();
+// Al final de styles.js - Asegurar altura del contenido
+function adjustContentHeight() {
+    const header = document.querySelector('.menu-header-phone');
+    const footer = document.querySelector('.main-footer');
+    const mainContent = document.querySelector('.section-home');
+    
+    if (header && footer && mainContent) {
+        const headerHeight = header.offsetHeight;
+        const footerHeight = footer.offsetHeight;
+        const windowHeight = window.innerHeight;
+        
+        const minContentHeight = windowHeight - headerHeight - footerHeight - 100;
+        
+        if (minContentHeight > 0) {
+            mainContent.style.minHeight = minContentHeight + 'px';
+        }
+    }
+}
+
+// Ejecutar al cargar y al redimensionar
+document.addEventListener('DOMContentLoaded', adjustContentHeight);
+window.addEventListener('resize', adjustContentHeight);
