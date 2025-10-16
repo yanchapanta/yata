@@ -1102,11 +1102,21 @@ a:hover {
   gap: 1rem;
 }
 .section-home {
-  width: 100%;
-  height: calc(100vh - 4rem - 4rem);
+  flex: 1;
+  overflow: visible;
+  position: relative;
 }
 
 .section-home-container {
+  width: inherit;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 0rem;
+  flex: 1;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   width: inherit;
   display: grid;
   height: 100%;
@@ -1152,6 +1162,7 @@ a:hover {
 
 .cards {
   width: 100%;
+  flex: 1;
 }
 
 .cards-container {
@@ -1159,6 +1170,7 @@ a:hover {
   grid-template-columns: repeat(2, minmax(163px, 350px));
   grid-auto-rows: 30%;
   gap: 1rem;
+  min-height: 500px;
 }
 @media only screen and (min-width: 18.75em) {
   .cards-container {
@@ -1831,5 +1843,55 @@ section.sec-modal-add-card .btn-modal-close {
   }
   .card-icon-whatsapp:hover {
     transform: scale(1.15);
+  }
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+.main-footer {
+  margin-top: 7rem;
+  background: #f7f7f7;
+  padding: 2rem 1rem;
+  border-top: 1px solid #e0e0e0;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+.main-footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-footer .footer-content h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.main-footer .footer-content p {
+  font-family: "Quicksand", sans-serif;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 18.75em) {
+  .main-footer {
+    padding: 1.5rem 1rem;
+  }
+  .main-footer .footer-content h3 {
+    font-size: 1.1rem;
+  }
+  .main-footer .footer-content p {
+    font-size: 0.85rem;
   }
 }/*# sourceMappingURL=styles.css.map */

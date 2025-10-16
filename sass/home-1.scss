@@ -3,16 +3,29 @@
 
 //------------------HOME1---------------------//
 .section-home {
-	width: 100%;
-	height: calc(100vh - $bar-mobil-height - $bar-mobil-height);
+	flex: 1;
+    // AÑADE overflow para contenido largo
+    overflow: visible; // Permite que el contenido fluya
+    position: relative;
 }
 .section-home-container {
 	// background-color: rebeccapurple;
 	width: inherit; //no mover
 	display: grid;
-	height: 100%;
-	grid-template-rows: auto 1fr;
-	gap: 1rem;
+	grid-template-rows: auto 1fr auto;
+	gap: 0rem;
+	flex: 1;
+	 min-height: 60vh; // Altura mínima para empujar el footer
+    display: flex;
+    flex-direction: column;
+
+	flex: 1; // Que el contenedor tome todo el espacio disponible
+    width: inherit;
+    display: grid;
+    height: 100%; // Cambia de height fijo a 100%
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+
 }
 //------------------menu---------------------//
 .menu-home1 {
@@ -61,12 +74,14 @@
 
 .cards {
 	width: 100%;
+	flex: 1; // Que las cards expandan
 }
 .cards-container {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(163px,350px));
 	grid-auto-rows:30%;
 	gap: 1rem;
+	min-height: 500px; // Altura mínima del grid
 	@include phone(){
 		grid-template-columns: repeat(2, minmax(163px,350px));
 		grid-auto-rows:209px;		

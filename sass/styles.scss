@@ -12,6 +12,7 @@
 @use 'menu-1.scss' as *;
 @use 'my-orders.scss' as *;
 @use 'login-error.scss' as *;
-// NUEVO: Agregar WhatsApp styles
-@use 'whatsapp' as *; 
+@use 'whatsapp' as *;
+
+@use 'footer' as *; 
 

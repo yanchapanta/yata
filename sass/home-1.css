@@ -1,9 +1,19 @@
 .section-home {
-  width: 100%;
-  height: calc(100vh - 4rem - 4rem);
+  flex: 1;
+  overflow: visible;
+  position: relative;
 }
 
 .section-home-container {
+  width: inherit;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 0rem;
+  flex: 1;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   width: inherit;
   display: grid;
   height: 100%;
@@ -49,6 +59,7 @@
 
 .cards {
   width: 100%;
+  flex: 1;
 }
 
 .cards-container {
@@ -56,6 +67,7 @@
   grid-template-columns: repeat(2, minmax(163px, 350px));
   grid-auto-rows: 30%;
   gap: 1rem;
+  min-height: 500px;
 }
 @media only screen and (min-width: 18.75em) {
   .cards-container {
