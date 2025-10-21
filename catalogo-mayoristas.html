@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Mayoristas - Productos YATA</title>
+    <meta name="description" content="Catálogo exclusivo para mayoristas - Productos YATA. Precios especiales por volumen">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="img/logo/favicon.svg">
+    <link rel="apple-touch-icon" href="img/logo/apple-touch-icon.png">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="sass/styles.css?v=1.5">
+</head>
+<body data-json="./data/productos.json">
+    
+    <div class="page-wrapper mayorista-wrapper">
+       
+        <!-- Header Especial para Mayoristas -->
+        <header class="menu-header menu-header-mayorista">
+            <div class="logotipo">
+                <img src="img/logo/logo_yard_sale.svg" alt="Productos YATA Mayoristas">
+            </div>
+            <nav class="menu">
+                <a class="btn-menu" href="index.html">🛒 Catálogo Minorista</a>
+                <a class="btn-menu active" href="catalogo-mayoristas.html">💼 Catálogo Mayorista</a>
+            </nav>
+            <div class="info-mayorista">
+                <span>💼 Área Mayoristas</span>
+            </div>
+        </header>
+
+         <!-- Grid de Productos -->
+        <main class="section-home container-1">
+            <div class="section-home-container">
+                <article>
+                    <!-- Contador de Productos -->
+                    <div class="contador-productos">
+                        <p>Mostrando <span id="contador-actual">0</span> de <span id="contador-total">0</span> productos disponibles</p>
+                    </div>
+
+                    <div class="cards cards-mayorista">
+                        <div id="idCardProducts" class="cards_mayorista-container">
+                            <!-- Los productos se cargarán dinámicamente -->
+                        </div>
+                    </div>
+
+                    <!-- Mensaje si no hay productos -->
+                    <div id="sin-productos" class="sin-productos-mayorista" style="display: none;">
+                        <div class="mensaje-vacio">
+                            <h3>📦 No hay productos disponibles</h3>
+                            <p>No se encontraron productos que coincidan con tu búsqueda.</p>
+                            <button class="btn-mayorista" onclick="limpiarFiltros()">Mostrar todos los productos</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <!-- Banner Exclusivo Mayoristas -->
+        <section class="banner-mayorista">
+            <div class="container-1">
+                <h1>Catálogo Exclusivo para Mayoristas</h1>
+                <p>Precios especiales por volumen • Descuentos progresivos • Condiciones preferenciales</p>
+                <div class="beneficios-mayorista">
+                    <span>🚚 Envíos prioritarios</span>
+                    <span>💳 Condiciones de pago especiales</span>
+                    <span>📦 Empaques personalizados</span>
+                    <span>🎯 Atención personalizada</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel de Filtros y Búsqueda -->
+        <section class="controles-mayorista container-1">
+            <!-- Filtros por Categoría -->
+            <div class="filtros-categorias">
+                <button class="btn-filtro active" data-categoria="todos">Todos los Productos</button>
+                <!-- Las categorías se cargarán dinámicamente -->
+            </div>
+
+            <!-- Búsqueda y Ordenamiento -->
+            <div class="busqueda-ordenamiento">
+                <div class="busqueda-mayorista">
+                    <div class="btn-search bg">
+                        <label for="search-mayorista">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7979 10.9948C12.595 10.7919 12.5481 10.4194 12.6999 10.1694C12.6999 10.1694 12.7688 10.0766 12.9113 9.78552C13.3524 8.88426 13.6 7.87105 13.6 6.8C13.6 3.04446 10.5555 0 6.8 0C3.04446 0 0 3.04446 0 6.8C0 10.5555 3.04446 13.6 6.8 13.6C7.86726 13.6 8.8771 13.3541 9.77595 12.9159C10.0705 12.7723 10.1643 12.7027 10.1643 12.7027C10.4177 12.5512 10.7889 12.592 10.9948 12.7979L14.8234 16.6266C15.3214 17.1245 16.1286 17.1245 16.6266 16.6266C17.1245 16.1286 17.1245 15.3214 16.6266 14.8234L12.7979 10.9948ZM11.05 6.8C11.05 9.14721 9.14721 11.05 6.8 11.05C4.45279 11.05 2.55 9.14721 2.55 6.8C2.55 4.45279 4.45279 2.55 6.8 2.55C9.14721 2.55 11.05 4.45279 11.05 6.8Z" fill="#C7C7C7"/>
+                            </svg>
+                        </label>
+                        <input id="search-mayorista" type="text" placeholder="Buscar productos, códigos...">
+                    </div>
+                </div>
+                
+                <div class="ordenamiento-mayorista">
+                    <label for="order-mayorista">Ordenar por:</label>
+                    <select id="order-mayorista">
+                        <option value="precio">Precio Mayorista (Menor a Mayor)</option>
+                        <option value="nombre">Nombre A-Z</option>
+                        <option value="categoria">Categoría</option>
+                        <option value="popularidad">Más Populares</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Información de Descuentos -->
+            <div class="info-descuentos">
+                <h4>🎯 Escala de Descuentos por Volumen:</h4>
+                <div class="escala-descuentos">
+                    <div class="nivel-descuento">
+                        <span class="volumen">10+ unidades</span>
+                        <span class="descuento">-20%</span>
+                    </div>
+                    <div class="nivel-descuento">
+                        <span class="volumen">50+ unidades</span>
+                        <span class="descuento">-25%</span>
+                    </div>
+                    <div class="nivel-descuento">
+                        <span class="volumen">100+ unidades</span>
+                        <span class="descuento">-30%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- CTA para Contacto -->
+        <section class="cta-mayorista">
+            <div class="container-1">
+                <div class="cta-content">
+                    <h2>¿Necesitas condiciones especiales?</h2>
+                    <p>Contáctanos para obtener precios personalizados según tu volumen de compra</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/593TU_NUMERO?text=Hola,%20soy%20mayorista%20y%20me%20interesan%20sus%20productos" 
+                           target="_blank" class="btn-mayorista btn-whatsapp">
+                            💬 WhatsApp
+                        </a>
+                        <a href="tel:+593TUNUMERO" class="btn-mayorista btn-llamar">
+                            📞 Llamar Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer mayorista-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Productos YATA - Área de Mayoristas</h3>
+                    <p>Especialistas en productos de limpieza y cuidado automotriz</p>
+                    <div class="contacto-footer">
+                        <p>📞 <a href="tel:+593TUNUMERO">+593 XX XXX XXXX</a></p>
+                        <p>📧 <a href="mailto:mayoristas@productosyata.com">mayoristas@productosyata.com</a></p>
+                        <p>📍 Ecuador - Envíos a todo el país</p>
+                    </div>
+                </div>
+                <div class="footer-stats">
+                    <p><strong id="total-productos-footer">0</strong> productos disponibles</p>
+                    <p><strong id="categorias-total">0</strong> categorías</p>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2024 Productos YATA - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Modal de Detalles de Producto -->
+    <div id="modal-producto" class="modal modal-mayorista" style="display: none;">
+        <div class="modal-content">
+            <button class="btn-cerrar-modal" onclick="cerrarModalProducto()">✕</button>
+            <div id="contenido-modal-producto">
+                <!-- Contenido dinámico del producto -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/mayorista.js"></script>
+</body>
+</html>

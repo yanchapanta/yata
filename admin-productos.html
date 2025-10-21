@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Productos - YATA</title>
+    <link rel="stylesheet" href="sass/styles.css?v=1.5">
+</head>
+<body data-json="./data/productos.json">
+    
+    <div class="page-wrapper">
+        <!-- Header -->
+        <div class="menu-header menu-header-phone">
+            <div class="logotipo">
+                <img src="img/logo/logo_yard_sale.svg" alt="YATA">
+            </div>
+            <nav class="menu">
+                <a class="btn-menu" href="index.html">Catálogo Clientes</a>
+                <a class="btn-menu" href="catalogo-mayoristas.html">Catálogo Mayoristas</a>
+                <a class="btn-menu active" href="admin-productos.html">Admin Productos</a>
+            </nav>
+        </div>
+
+        <!-- Panel de Administración -->
+        <section class="panel-admin">
+            <div class="container-1">
+                <h1>🧰 Administración de Productos</h1>
+                
+                <!-- Controles Principales -->
+                <div class="admin-controls">
+                    <button class="btn-admin btn-crear" onclick="mostrarFormularioCrear()">
+                        ＋ Crear Nuevo Producto
+                    </button>
+                    <button class="btn-admin btn-exportar" onclick="exportarProductos()">
+                        📊 Exportar CSV
+                    </button>
+                    <button class="btn-admin btn-recargar" onclick="cargarProductos()">
+                        🔄 Recargar Datos
+                    </button>
+                </div>
+
+                <!-- Formulario Crear/Editar -->
+                <div id="formulario-producto" class="formulario-producto" style="display: none;">
+                    <h3 id="titulo-formulario">Crear Nuevo Producto</h3>
+                    <form id="form-producto" onsubmit="guardarProducto(event)">
+                        <input type="hidden" id="producto-id">
+                        
+                        <div class="form-grid">
+                            <!-- Columna 1 -->
+                            <div class="form-group">
+                                <label for="codigo">Código *</label>
+                                <input type="text" id="codigo" required placeholder="YATA-001">
+                            </div>
+                            <div class="form-group">
+                                <label for="nombre">Nombre del Producto *</label>
+                                <input type="text" id="nombre" required placeholder="Difusor Aroma Fresa">
+                            </div>
+                            <div class="form-group">
+                                <label for="categoria">Categoría *</label>
+                                <select id="categoria" required>
+                                    <option value="">Seleccionar categoría</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="precio">Precio ($) *</label>
+                                <input type="number" id="precio" step="0.01" min="0" required placeholder="1.00">
+                            </div>
+
+                            <!-- Columna 2 -->
+                            <div class="form-group">
+                                <label for="iva">IVA (%)</label>
+                                <input type="number" id="iva" value="12" step="0.01" min="0" max="100">
+                            </div>
+                            <div class="form-group">
+                                <label for="presentacion">Presentación</label>
+                                <input type="text" id="presentacion" placeholder="Caja x 12 unidades">
+                            </div>
+                            <div class="form-group">
+                                <label for="unidad">Unidad</label>
+                                <input type="text" id="unidad" value="unidad" placeholder="unidad">
+                            </div>
+                            <div class="form-group">
+                                <label for="estado">Estado</label>
+                                <select id="estado">
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                </select>
+                            </div>
+
+                            <!-- Campos de ancho completo -->
+                            <div class="form-group full-width">
+                                <label for="descripcionCorta">Descripción Corta *</label>
+                                <textarea id="descripcionCorta" required placeholder="Breve descripción para el catálogo"></textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="descripcionDetallada">Descripción Detallada</label>
+                                <textarea id="descripcionDetallada" rows="3" placeholder="Descripción completa del producto"></textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="imagen">URL de Imagen</label>
+                                <input type="url" id="imagen" placeholder="https://res.cloudinary.com/.../imagen.jpg">
+                                <small>Usa Cloudinary o cualquier servicio de hosting de imágenes</small>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="notas">Notas Internas</label>
+                                <textarea id="notas" rows="2" placeholder="Información adicional para uso interno"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn-admin btn-guardar">💾 Guardar Producto</button>
+                            <button type="button" class="btn-admin btn-cancelar" onclick="ocultarFormulario()">
+                                ❌ Cancelar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Estadísticas -->
+                <div class="estadisticas">
+                    <div class="stat-card">
+                        <h3>📦 Total Productos</h3>
+                        <p id="total-productos">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>✅ Activos</h3>
+                        <p id="productos-activos">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>💰 Valor Inventario</h3>
+                        <p id="valor-inventario">$0.00</p>
+                    </div>
+                </div>
+
+                <!-- Lista de Productos -->
+                <div class="lista-admin">
+                    <div class="lista-header">
+                        <h3>📋 Lista de Productos</h3>
+                        <div class="busqueda-rapida">
+                            <input type="text" id="busqueda-rapida" placeholder="Buscar productos...">
+                        </div>
+                    </div>
+                    
+                    <div class="tabla-productos-container">
+                        <table id="tabla-productos">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th data-sort="codigo">Código 🔽</th>
+                                    <th data-sort="nombre">Nombre</th>
+                                    <th data-sort="categoria">Categoría</th>
+                                    <th data-sort="precio">Precio</th>
+                                    <th data-sort="estado">Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cuerpo-tabla">
+                                <!-- Los productos se cargarán aquí dinámicamente -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal de Confirmación -->
+    <div id="modal-confirmar" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h3>⚠️ Confirmar Eliminación</h3>
+            <p id="mensaje-confirmacion">¿Estás seguro de que quieres eliminar este producto?</p>
+            <div class="modal-buttons">
+                <button class="btn-admin btn-eliminar-confirm" onclick="confirmarEliminacion()">
+                    ✅ Sí, Eliminar
+                </button>
+                <button class="btn-admin btn-cancelar" onclick="cerrarModal()">
+                    ❌ Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/crud-productos.js"></script>
+</body>
+</html>
