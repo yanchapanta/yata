@@ -1,3 +1,41 @@
+let productosData = [];
+let categoriasData = [];
+let productoAEliminar = null;
+let ordenActual = { campo: 'codigo', direccion: 'asc' };
+// ==================== FUNCIONES PRINCIPALES ====================
+
+// 1. CARGAR DATOS DESDE JSON
+async function cargarProductos() {
+    try {
+        const jsonFile = document.body.getAttribute('data-json');
+        const response = await fetch(jsonFile);
+        const data = await response.json();
+        
+        productosData = data.productos || [];
+        categoriasData = data.categorias || [];
+        
+        console.log('✅ Datos cargados:', productosData.length, 'productos');
+       
+        inicializarAplicacion();
+        
+    } catch (error) {
+        console.error('❌ Error cargando productos:', error);
+        // Si hay error, usar datos de respaldo
+        productosData = [
+            {
+                id: '001',
+                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379666/difusor_fresa_lzhpzd.jpg',
+                name: 'Difusor 8ml Aroma fresa',
+                price: '$1,00'
+            },
+            // ... agregar aquí los otros productos del arrayProducts como respaldo
+        ];
+        mostrarMensaje('Error al cargar los datos del catálogo', 'error');
+        inicializarAplicacion();
+    }
+}
+
+
 (() => {
     //ENTRRADAS
     const svgHtml = `
@@ -100,157 +138,102 @@
     }, 300);
 })(),
     (() => {
+
+        
+
+
+
         const idCardProducts = document.querySelector('#idCardProducts');
 
-        //ruta absoluta
-        let pathAbsolute = self.location.href;
-        //Redireccionar imagenes  cuando sea home-1.html === index.html 
-        //y cuando esta en home-2.html
-        let imgPath = '';
-        if (pathAbsolute.includes('index.html')) {
-            imgPath = 'img';
-        } else {
-            imgPath = '../img';
-        }
-        //simulacion de base de datos
-        const arrayProducts = [
-            {
-                id: '001',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379666/difusor_fresa_lzhpzd.jpg',
-                name: 'Difusor 8ml Aroma fresa',
-                price: '$1,00'
-            },
-            {
-                id: '002',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/f_webp/v1760379627/ambientador_cnuevo_r7ldau.jpg',
-                name: 'Ambientador fresa 100ml',
-                price: '$2,00'
-            },
-            {
-                id: '003',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379652/desinfectante_tentacion_enytt8.jpg',
-                name: 'Desinfectante Aroma fuerte Tentación 400ml',
-                price: '$1,00'
-            },
-            {
-                id: '004',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379625/abrillantador_universal_mfdc4f.jpg',
-                name: 'Abrillantador universal 100ml',
-                price: '$2,00'
-            },
-            {
-                id: '005',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379635/desinfectante_chicle_iyv5lf.jpg',
-                name: 'Desinfectante aroma fuerte',
-                price: '$1,00'
-            },
-            {
-                id: '006',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379625/almoral_tgzglg.jpg',
-                name: 'Almoral 300ml aroma fresa',
-                price: '$1,00'
-            },
-            {
-                id: '007',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379624/aceite_zjgdse.jpg',
-                name: 'Aceite vaselina aroma coco 360ml',
-                price: '$2,00'
-            },
-            {
-                id: '008',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379714/microfibra_azul_pwzpnb.jpg',
-                name: 'Toalla microfibra 50cmx50cm',
-                price: '$1,00'
-            },
-            {
-                id: '009',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379700/franela_roja_gp1szw.jpg',
-                name: 'Franela 50cmx50cm',
-                price: '$1,00'
-            },
-            {
-                id: '010',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379706/guaype_blanco_oeglxx.jpg',
-                name: 'guaipe funda 9 unidades',
-                price: '$1,00'
-            },
-            {
-                id: '011',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379708/guaype_color_ig8tfp.jpg',
-                name: 'guaipe funda 6 unudades',
-                price: '$1,00'
-            },
-            {
-                id: '012',
-                image: 'https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760451148/difusor_envase_negro_dgcmxq.png',
-                name: 'Difusor 8ml Envase ',
-                price: '$0.33'
-            }
-        ];
-        //Redireccionando productos dependiendo si esta logeado solo para index o home 1
-        document.addEventListener('DOMContentLoaded', (e) => {
-            let pathAbsolute = self.location.href;
-            const indexHome1 = pathAbsolute.includes('index.html');
-            if (indexHome1) {
-                arrayProducts.forEach((product) => {
-                    //´card para usuarios que no estan logeado
-                    idCardProducts.innerHTML += `
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="${product.image}" alt="product">
-                        </div>
-                        <div class="card-flex">
-                            <div>
-                                <p class="card-price">${product.price}</p>
-                                <p class="card-name">${product.name}</p>
-                            </div>
-                            <a href="https://wa.me/593979947191?text=Hola,%20me%20interesa%20${encodeURIComponent(product.name)}%20,%20ayúdame%20con%20más%20información" 
-                            target="_blank" 
-                            class="card-icon-whatsapp">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="24" cy="24" r="24" fill="#25D366"/>
-                                    <path d="M12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24C36 30.6274 30.6274 36 24 36C21.5935 36 19.3319 35.2899 17.4009 34.0632L12 36L13.9368 30.5991C12.7101 28.6681 12 26.4065 12 24Z" fill="white"/>
-                                    <path d="M18.3999 22.8C18.0666 22.4667 17.5333 22.4667 17.2 22.8C16.8666 23.1333 16.8666 23.6667 17.2 24L20.8 27.6C21.1333 27.9333 21.6666 27.9333 22 27.6L30.8 18.8C31.1333 18.4667 31.1333 17.9333 30.8 17.6C30.4666 17.2667 29.9333 17.2667 29.6 17.6L21.4 25.8L18.3999 22.8Z" fill="#25D366"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                `;
-                });
-            } else {
-
-                arrayProducts.forEach((product) => {
-                    //card para usuarios que estan logeado
-                  idCardProducts.innerHTML += `
-                    <div class="card">
-                        <div class="card-img">
-                            <a class="btn-remove" href="#">Removed from cart</a>
-                            <a href="#modal-add-card">
-                                <img src="${product.image}" alt="product">
-                            </a>
-                        </div>
-                        <div class="card-flex">
-                            <div>
-                                <p class="card-price">${product.price}</p>
-                                <p class="card-name">${product.name}</p>
-                            </div>
-                            <a href="https://wa.me/593979947191?text=Hola,%20me%20interesa%20${encodeURIComponent(product.name)}%20,%20ayúdame%20con%20más%20información" 
-                            target="_blank" 
-                            class="card-icon-whatsapp">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="24" cy="24" r="24" fill="#25D366"/>
-                                    <path d="M12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24C36 30.6274 30.6274 36 24 36C21.5935 36 19.3319 35.2899 17.4009 34.0632L12 36L13.9368 30.5991C12.7101 28.6681 12 26.4065 12 24Z" fill="white"/>
-                                    <path d="M18.3999 22.8C18.0666 22.4667 17.5333 22.4667 17.2 22.8C16.8666 23.1333 16.8666 23.6667 17.2 24L20.8 27.6C21.1333 27.9333 21.6666 27.9333 22 27.6L30.8 18.8C31.1333 18.4667 31.1333 17.9333 30.8 17.6C30.4666 17.2667 29.9333 17.2667 29.6 17.6L21.4 25.8L18.3999 22.8Z" fill="#25D366"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                `;
-                });
-            }
-        });
+    
+        
     })();
-// Al final de styles.js - Asegurar altura del contenido
+
+function inicializarAplicacion(){
+    
+     let pathAbsolute = self.location.href;
+     const indexHome1 = pathAbsolute.includes('index.html');
+     
+   
+     productosData.forEach((product) => {
+        const imagen = product.imagen || product.image || '';
+        console.log('📸 URL de imagen:', imagen);
+        // TEST: Verificar si la imagen carga
+    const testImg = new Image();
+    testImg.onload = function() {
+        console.log('✅ Imagen carga correctamente:', imagen);
+    };
+    testImg.onerror = function() {
+        console.log('❌ Error cargando imagen:', imagen);
+    };
+    testImg.src = imagen;
+    console.log('🔍 ¿URL válida?:', imagen.startsWith('http'));
+         //´card para usuarios que no estan logeado
+         idCardProducts.innerHTML += `
+         <div class="card">
+             <div class="card-img">
+                 <img src="${imagen}" alt="product">
+             </div>
+             <div class="card-flex">
+                 <div>
+                     <p class="card-price">${product.precio} $</p>
+                     <p class="card-name">${product.nombre}</p>
+                 </div>
+                 <a href="https://wa.me/593979947191?text=Hola,%20me%20interesa%20${encodeURIComponent(product.name)}%20,%20ayúdame%20con%20más%20información" 
+                 target="_blank" 
+                 class="card-icon-whatsapp">
+                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <circle cx="24" cy="24" r="24" fill="#25D366"/>
+                         <path d="M12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24C36 30.6274 30.6274 36 24 36C21.5935 36 19.3319 35.2899 17.4009 34.0632L12 36L13.9368 30.5991C12.7101 28.6681 12 26.4065 12 24Z" fill="white"/>
+                         <path d="M18.3999 22.8C18.0666 22.4667 17.5333 22.4667 17.2 22.8C16.8666 23.1333 16.8666 23.6667 17.2 24L20.8 27.6C21.1333 27.9333 21.6666 27.9333 22 27.6L30.8 18.8C31.1333 18.4667 31.1333 17.9333 30.8 17.6C30.4666 17.2667 29.9333 17.2667 29.6 17.6L21.4 25.8L18.3999 22.8Z" fill="#25D366"/>
+                     </svg>
+                 </a>
+             </div>
+         </div>
+     `;
+     });
+     if (indexHome1) {
+     } else {
+    
+         productosData.forEach((product) => {
+             //card para usuarios que estan logeado
+           idCardProducts.innerHTML += `
+             <div class="card">
+                 <div class="card-img">
+                     <a class="btn-remove" href="#">Removed from cart</a>
+                     <a href="#modal-add-card">
+                         <img src="${product.imagen}" alt="product">
+                     </a>
+                 </div>
+                 <div class="card-flex">
+                     <div>
+                         <p class="card-price">${product.price}</p>
+                         <p class="card-name">${product.name}</p>
+                     </div>
+                     <a href="https://wa.me/593979947191?text=Hola,%20me%20interesa%20${encodeURIComponent(product.name)}%20,%20ayúdame%20con%20más%20información" 
+                     target="_blank" 
+                     class="card-icon-whatsapp">
+                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <circle cx="24" cy="24" r="24" fill="#25D366"/>
+                             <path d="M12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24C36 30.6274 30.6274 36 24 36C21.5935 36 19.3319 35.2899 17.4009 34.0632L12 36L13.9368 30.5991C12.7101 28.6681 12 26.4065 12 24Z" fill="white"/>
+                             <path d="M18.3999 22.8C18.0666 22.4667 17.5333 22.4667 17.2 22.8C16.8666 23.1333 16.8666 23.6667 17.2 24L20.8 27.6C21.1333 27.9333 21.6666 27.9333 22 27.6L30.8 18.8C31.1333 18.4667 31.1333 17.9333 30.8 17.6C30.4666 17.2667 29.9333 17.2667 29.6 17.6L21.4 25.8L18.3999 22.8Z" fill="#25D366"/>
+                         </svg>
+                     </a>
+                 </div>
+             </div>
+         `;
+         });
+     }
+     document.addEventListener('DOMContentLoaded', (e) => {
+     });
+
+}
+    // Al final de styles.js - Asegurar altura del contenido
+    //Redireccionando productos dependiendo si esta logeado solo para index o home 1
+
+
+
+
 function adjustContentHeight() {
     const header = document.querySelector('.menu-header-phone');
     const footer = document.querySelector('.main-footer');
@@ -270,5 +253,5 @@ function adjustContentHeight() {
 }
 
 // Ejecutar al cargar y al redimensionar
-document.addEventListener('DOMContentLoaded', adjustContentHeight);
+document.addEventListener('DOMContentLoaded', cargarProductos);
 window.addEventListener('resize', adjustContentHeight);
