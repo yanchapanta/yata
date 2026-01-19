@@ -14,7 +14,7 @@ async function cargarProductos() {
         productosData = data.productos || [];
         categoriasData = data.categorias || [];
         
-        console.log('✅ Datos cargados:', productosData.length, 'productos');
+        //console.log('✅ Datos cargados:', productosData.length, 'productos');
        
         inicializarAplicacion();
         
@@ -157,17 +157,17 @@ function inicializarAplicacion(){
    
      productosData.forEach((product) => {
         const imagen = product.imagen || product.image || '';
-        console.log('📸 URL de imagen:', imagen);
+        //console.log('📸 URL de imagen:', imagen);
         // TEST: Verificar si la imagen carga
     const testImg = new Image();
     testImg.onload = function() {
-        console.log('✅ Imagen carga correctamente:', imagen);
+        //console.log('✅ Imagen carga correctamente:', imagen);
     };
     testImg.onerror = function() {
-        console.log('❌ Error cargando imagen:', imagen);
+        //console.log('❌ Error cargando imagen:', imagen);
     };
     testImg.src = imagen;
-    console.log('🔍 ¿URL válida?:', imagen.startsWith('http'));
+    //console.log('🔍 ¿URL válida?:', imagen.startsWith('http'));
          //´card para usuarios que no estan logeado
          idCardProducts.innerHTML += `
          <div class="card">

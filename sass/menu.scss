@@ -44,7 +44,7 @@
     box-shadow: $box-shadow1;
     @include desktop(){
         padding: 0.5rem 2rem;
-        grid-template-columns: auto 2fr 1fr 1fr;
+        grid-template-columns: auto auto 2fr 1fr;
         gap: calc($var * 2);
         box-shadow: $box-shadow1;
         display: grid;
@@ -58,6 +58,7 @@
         }
     }
     .menu{
+
         display: none;
         @include desktop() {
             display: flex;
@@ -90,7 +91,21 @@
 	.logotipo{
     }
 }
-
+.footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links a {
+            color: #cbd5e0;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
 // $variableX: 40px;
 // nav.menu {
 // 	display: none;
