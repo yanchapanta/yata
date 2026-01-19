@@ -1056,7 +1056,7 @@ a:hover {
 @media only screen and (min-width: 63em) {
   .menu-header-phone {
     padding: 0.5rem 2rem;
-    grid-template-columns: auto 2fr 1fr 1fr;
+    grid-template-columns: auto auto 2fr 1fr;
     gap: 2rem;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
     display: grid;
