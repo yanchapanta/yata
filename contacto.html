@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - ProductosYATA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="sass/styles.css?v=1.2">
+   <style>
+        :root {
+            --primary-color: #e53935;
+            --secondary-color: #1a237e;
+            --light-color: #f5f5f5;
+            --dark-color: #333;
+            --gray-color: #757575;
+            --whatsapp-green: #25D366;
+            --facebook-blue: #1877F2;
+            --tiktok-black: #000000;
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -14,553 +30,656 @@
         }
         
         body {
-            background-color: #f8f9fa;
+            background-color: #f9f9f9;
             color: #333;
             line-height: 1.6;
         }
         
-        .container {
+        .contact-section {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 40px 20px;
         }
         
-        /* Header y Navegación */
-        header {
-            background-color: #1a365d;
-            color: white;
-            padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo i {
-            margin-right: 10px;
-            color: #4299e1;
-        }
-        
-        .logo span {
-            color: #4299e1;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: #4299e1;
-        }
-        
-        /* Hero Section */
-        .contact-hero {
-            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
-            color: white;
-            padding: 100px 0 80px;
+        .contact-header {
             text-align: center;
-            border-bottom-left-radius: 50% 20%;
-            border-bottom-right-radius: 50% 20%;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
         
-        .contact-hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-weight: 800;
+        .contact-header h1 {
+            font-size: 2.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
         }
         
-        .contact-hero p {
+        .contact-header h1::after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 4px;
+            background-color: var(--primary-color);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .contact-header p {
             font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            opacity: 0.9;
+            color: var(--gray-color);
+            max-width: 600px;
+            margin: 0 auto;
         }
         
-        /* Contenido principal */
-        .contact-content {
+        .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
-            margin-bottom: 80px;
         }
         
         .contact-info {
             background-color: white;
+            padding: 30px;
             border-radius: 10px;
-            padding: 40px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
         
-        .contact-info h2 {
-            color: #1a365d;
-            margin-bottom: 30px;
-            font-size: 2rem;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #4299e1;
+        .contact-actions {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
         
-        .info-item {
+        .info-title {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .contact-item {
             display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         
-        .info-icon {
-            background-color: #4299e1;
-            color: white;
+        .contact-icon {
+            background-color: rgba(229, 57, 53, 0.1);
             width: 50px;
             height: 50px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 20px;
+            margin-right: 15px;
             flex-shrink: 0;
         }
         
-        .info-text h3 {
-            color: #1a365d;
-            margin-bottom: 5px;
+        .contact-icon i {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+        }
+        
+        .contact-details h3 {
             font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: var(--secondary-color);
         }
         
-        .info-text p {
-            color: #666;
+        .contact-details p {
+            color: var(--gray-color);
         }
         
-        .info-text a {
-            color: #4299e1;
-            text-decoration: none;
-            transition: color 0.3s;
+        .address-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-color);
         }
         
-        .info-text a:hover {
-            color: #1a365d;
-            text-decoration: underline;
-        }
-        
-        /* Formulario de contacto */
-        .contact-form {
-            background-color: white;
-            border-radius: 10px;
-            padding: 40px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
-        
-        .contact-form h2 {
-            color: #1a365d;
-            margin-bottom: 30px;
-            font-size: 2rem;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #4299e1;
-        }
-        
-        .form-group {
-            margin-bottom: 25px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: #1a365d;
-            font-weight: 500;
-        }
-        
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #4299e1;
-        }
-        
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        
-        textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-        
-        .submit-btn {
-            background-color: #4299e1;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-            transition: background-color 0.3s;
-            font-weight: 600;
-        }
-        
-        .submit-btn:hover {
-            background-color: #3182ce;
-        }
-        
-        /* Mapa */
-        .map-section {
-            margin-bottom: 80px;
-        }
-        
-        .map-section h2 {
-            color: #1a365d;
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2.5rem;
-        }
-        
-        .map-container {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            height: 400px;
-        }
-        
-        .map-placeholder {
-            background-color: #e2e8f0;
-            height: 100%;
+        .address-box h4 {
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .address-box h4 i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .address-box p {
+            margin-bottom: 5px;
+        }
+        
+        .address-tag {
+            display: inline-block;
+            background-color: rgba(26, 35, 126, 0.1);
+            color: var(--secondary-color);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+        }
+        
+        /* Estilos para WhatsApp */
+        .whatsapp-section {
+            background: linear-gradient(135deg, rgba(37, 211, 102, 0.1) 0%, rgba(37, 211, 102, 0.05) 100%);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            border: 2px solid var(--whatsapp-green);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .whatsapp-section::before {
+            content: "💬";
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.05;
+            right: -20px;
+            bottom: -20px;
+            transform: rotate(15deg);
+        }
+        
+        .whatsapp-icon {
+            background-color: var(--whatsapp-green);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
             align-items: center;
             justify-content: center;
-            color: #4a5568;
+            margin: 0 auto 20px;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
         }
         
-        .map-placeholder i {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            color: #4299e1;
-        }
-        
-        /* Preguntas frecuentes */
-        .faq-section {
-            margin-bottom: 80px;
-        }
-        
-        .faq-section h2 {
-            color: #1a365d;
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2.5rem;
-        }
-        
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .faq-item {
-            background-color: white;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-        }
-        
-        .faq-question {
-            padding: 20px;
-            font-weight: 600;
-            color: #1a365d;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .faq-question i {
-            transition: transform 0.3s;
-        }
-        
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s, padding 0.3s;
-        }
-        
-        .faq-item.active .faq-answer {
-            padding: 0 20px 20px;
-            max-height: 500px;
-        }
-        
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #1a365d;
+        .whatsapp-icon i {
             color: white;
-            padding: 40px 0 20px;
-            margin-top: 60px;
+            font-size: 2rem;
         }
         
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
+        .whatsapp-section h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
         }
         
-        .footer-logo {
+        .whatsapp-number {
             font-size: 1.8rem;
             font-weight: 700;
-            margin-bottom: 20px;
+            color: var(--secondary-color);
+            margin: 15px 0;
+            display: block;
         }
         
-        .footer-links {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .footer-links a {
-            color: #cbd5e0;
-            text-decoration: none;
-            margin-bottom: 10px;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
+        .whatsapp-cta {
+            display: inline-block;
+            background-color: var(--whatsapp-green);
             color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
         }
         
-        .social-links {
+        .whatsapp-cta:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-cta i {
+            margin-right: 10px;
+        }
+        
+        .emoji-line {
+            font-size: 2rem;
+            margin: 15px 0;
+            letter-spacing: 8px;
+            color: #555;
+        }
+        
+        /* Estilos para redes sociales */
+        .social-section {
+            margin-top: 30px;
+        }
+        
+        .social-icons {
             display: flex;
-            gap: 15px;
+            justify-content: center;
+            gap: 20px;
             margin-top: 20px;
         }
         
-        .social-links a {
-            display: inline-flex;
+        .social-link {
+            display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
             text-decoration: none;
-            transition: background-color 0.3s;
         }
         
-        .social-links a:hover {
-            background-color: #4299e1;
+        .social-link.facebook {
+            background-color: var(--facebook-blue);
         }
         
-        .copyright {
+        .social-link.tiktok {
+            background-color: var(--tiktok-black);
+        }
+        
+        .social-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-link.facebook:hover {
+            background-color: #166FE5;
+        }
+        
+        .social-link.tiktok:hover {
+            background-color: #333;
+        }
+        
+        .social-text {
             text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #2d3748;
-            color: #a0aec0;
-            font-size: 0.9rem;
+            color: var(--gray-color);
+            margin-top: 15px;
+            font-size: 0.95rem;
         }
         
-        /* Responsive */
+        .social-text p {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .map-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 15px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .map-link:hover {
+            color: #c62828;
+            text-decoration: underline;
+        }
+        
+        .map-link i {
+            margin-right: 8px;
+        }
+        
+        .note {
+            background-color: #fff8e1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border-left: 4px solid #ffb300;
+            font-size: 0.95rem;
+        }
+        
+        /* Iconos de emojis usando Font Awesome como respaldo */
+        .emoji-icon {
+            font-style: normal;
+            display: inline-block;
+            margin: 0 5px;
+        }
+        
         @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            nav ul {
-                margin-top: 20px;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-            
-            nav ul li {
-                margin: 0 10px 10px;
-            }
-            
-            .contact-hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .contact-hero p {
-                font-size: 1.1rem;
-                padding: 0 15px;
-            }
-            
-            .form-row {
+            .contact-container {
                 grid-template-columns: 1fr;
-                gap: 0;
             }
             
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
+            .contact-header h1 {
+                font-size: 2.2rem;
             }
             
-            .social-links {
-                justify-content: center;
+            .whatsapp-number {
+                font-size: 1.5rem;
+            }
+            
+            .emoji-line {
+                font-size: 1.8rem;
+                letter-spacing: 6px;
+            }
+            
+            .social-icons {
+                gap: 15px;
+            }
+            
+            .social-link {
+                width: 55px;
+                height: 55px;
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .contact-section {
+                padding: 20px 15px;
+            }
+            
+            .contact-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .whatsapp-section {
+                padding: 20px;
+            }
+            
+            .emoji-line {
+                font-size: 1.5rem;
+                letter-spacing: 4px;
             }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header con navegación -->
-    <header>
-        <div class="container header-content">
-            <div class="logo">
-                <i class="fas fa-store"></i>
-                Productos<span>YATA</span>
+    <!-- Menú móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__overlay"></div>
+        <div class="mobile-menu__sidebar">
+            <div class="mobile-menu__header">
+                <button class="mobile-menu__close" id="closeMenu" aria-label="Cerrar menú">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/recomendados">Socios Recomendados</a></li>
-                    <li><a href="/contacto" style="color: #4299e1; font-weight: bold;">Contacto</a></li>
-                </ul>
+            <nav class="mobile-menu__nav" aria-label="Menú principal móvil">
+                <a href="/index.html" class="mobile-menu__link">Inicio</a>
+                <a href="/recomendados.html" class="mobile-menu__link">Socios Recomendados</a>
+                <a href="/contacto.html" class="mobile-menu__link">Contacto</a>
             </nav>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="contact-hero">
-        <div class="container">
+    </div>
+<div class="page-wrapper">
+    <div class="menu-header menu-header-phone">
+            <!-- Botón hamburguesa - Solo visible en móvil -->
+            <div class="hamburger-btn" id="hamburgerBtn">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <header role="banner" class="logotipo" style="display: block;">
+                <img src="img/logo/logo_yard_sale.svg" alt="Productos YATA">
+            </header>
+            <!-- menu desktop -->
+            <nav class="menu footer-links" aria-labelledby="categorias-productos">
+                <a href="/index.html">Inicio</a>
+                <a href="/recomendados.html">Socios Recomendados</a>
+                <a href="/contacto.html">Contacto</a>
+            </nav>
+            <div>
+                <a class="btn-link" href="./complement/msmProximamente.html">Sign in</a>
+                <div class="icon">
+                    <svg width="30" height="27" viewBox="0 0 30 27" class="icon-menu-color" fill="blue"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="icon-menu-color"
+                            d="M4.5 2C3.94772 2 3.5 2.44772 3.5 3C3.5 3.55228 3.94772 4 4.5 4V2ZM6.72222 3L7.7026 2.80288C7.60872 2.33593 7.19852 2 6.72222 2V3ZM6.18629 5.40762C6.29515 5.94907 6.82233 6.29975 7.36378 6.19089C7.90523 6.08202 8.25591 5.55484 8.14705 5.01339L6.18629 5.40762ZM8.94444 13.0525C8.39216 13.0525 7.94444 13.5002 7.94444 14.0525C7.94444 14.6048 8.39216 15.0525 8.94444 15.0525V13.0525ZM20.0556 14.0525V15.0525C20.4336 15.0525 20.7793 14.8394 20.949 14.5016L20.0556 14.0525ZM24.5 5.21051L25.3935 5.65961C25.5493 5.34962 25.5333 4.98101 25.3512 4.68568C25.1691 4.39035 24.847 4.21051 24.5 4.21051V5.21051ZM7.16667 4.21051C6.61438 4.21051 6.16667 4.65822 6.16667 5.21051C6.16667 5.76279 6.61438 6.21051 7.16667 6.21051V4.21051ZM7.96406 14.2496C8.07293 14.7911 8.60011 15.1418 9.14156 15.0329C9.68301 14.924 10.0337 14.3969 9.92482 13.8554L7.96406 14.2496ZM8.14705 5.01339C8.03818 4.47194 7.511 4.12126 6.96955 4.23012C6.4281 4.33899 6.07742 4.86617 6.18629 5.40762L8.14705 5.01339ZM9.64968 14.7615C10.0412 14.372 10.0429 13.7388 9.65342 13.3473C9.26393 12.9557 8.63076 12.9541 8.23921 13.3436L9.64968 14.7615ZM6.39667 16.5869L5.69143 15.8779L6.39667 16.5869ZM20.0556 19.4735C20.6078 19.4735 21.0556 19.0258 21.0556 18.4735C21.0556 17.9213 20.6078 17.4735 20.0556 17.4735V19.4735ZM20.0556 18.4735H19.0556C19.0556 18.7397 19.1616 18.9948 19.3503 19.1825L20.0556 18.4735ZM22.2778 20.684L21.5725 21.393C21.7599 21.5794 22.0135 21.684 22.2778 21.684V20.684ZM11.1667 20.684L10.3018 20.1821C10.2133 20.3345 10.1667 20.5077 10.1667 20.684H11.1667ZM11.1667 22.8945H10.1667C10.1667 23.0709 10.2133 23.244 10.3018 23.3965L11.1667 22.8945ZM4.5 4H6.72222V2H4.5V4ZM5.74184 3.19712L6.18629 5.40762L8.14705 5.01339L7.7026 2.80288L5.74184 3.19712ZM8.94444 15.0525H20.0556V13.0525H8.94444V15.0525ZM20.949 14.5016L25.3935 5.65961L23.6065 4.7614L19.1621 13.6034L20.949 14.5016ZM24.5 4.21051H7.16667V6.21051H24.5V4.21051ZM9.92482 13.8554L8.14705 5.01339L6.18629 5.40762L7.96406 14.2496L9.92482 13.8554ZM8.23921 13.3436L5.69143 15.8779L7.1019 17.2958L9.64968 14.7615L8.23921 13.3436ZM5.69143 15.8779C4.35112 17.2111 5.31103 19.4735 7.18222 19.4735V17.4735C7.14208 17.4735 7.12553 17.4635 7.11734 17.4578C7.10473 17.4489 7.08938 17.4322 7.07888 17.407C7.06837 17.3817 7.06775 17.3602 7.07003 17.3471C7.07136 17.3395 7.07483 17.3228 7.1019 17.2958L5.69143 15.8779ZM7.18222 19.4735H20.0556V17.4735H7.18222V19.4735ZM21.0556 18.4735C21.0556 17.81 21.5978 17.263 22.2778 17.263V15.263C20.5032 15.263 19.0556 16.6954 19.0556 18.4735H21.0556ZM22.2778 17.263C22.9578 17.263 23.5 17.81 23.5 18.4735H25.5C25.5 16.6954 24.0524 15.263 22.2778 15.263V17.263ZM23.5 18.4735C23.5 19.1371 22.9578 19.684 22.2778 19.684V21.684C24.0524 21.684 25.5 20.2516 25.5 18.4735H23.5ZM22.983 19.9751L20.7608 17.7646L19.3503 19.1825L21.5725 21.393L22.983 19.9751ZM12.0315 21.186C12.3068 20.7119 12.8711 20.4771 13.4088 20.6204L13.9239 18.6878C12.5185 18.3133 11.0324 18.9233 10.3018 20.1821L12.0315 21.186ZM13.4088 20.6204C13.9456 20.7635 14.3134 21.2451 14.3134 21.7893H16.3134C16.3134 20.3325 15.3301 19.0627 13.9239 18.6878L13.4088 20.6204ZM14.3134 21.7893C14.3134 22.3335 13.9456 22.8151 13.4088 22.9582L13.9239 24.8907C15.3301 24.5159 16.3134 23.2461 16.3134 21.7893H14.3134ZM13.4088 22.9582C12.8711 23.1015 12.3068 22.8667 12.0315 22.3926L10.3018 23.3965C11.0324 24.6553 12.5185 25.2653 13.9239 24.8907L13.4088 22.9582ZM12.1667 22.8945V20.684H10.1667V22.8945H12.1667Z"
+                            fill="black"></path>
+                        <circle cx="24" cy="5" r="5" class="icon-menu-color" fill="#ACD9B2"></circle>
+                    </svg>
+                </div>
+            </div>
+    
+    </div>
+  <!-- Sección de Contacto -->
+    <section class="contact-section">
+        <div class="contact-header">
             <h1>Contáctanos</h1>
-            <p>Estamos aquí para ayudarte. ¿Tienes preguntas sobre nuestros productos, necesitas soporte o quieres colaborar con nosotros? No dudes en ponerte en contacto.</p>
-            <div class="social-links" style="justify-content: center;">
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+            <p>Estamos aquí para ayudarte. Ponte en contacto con nosotros a través de cualquiera de los siguientes medios.</p>
+        </div>
+        
+        <div class="contact-container">
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <h2 class="info-title">Información de Contacto</h2>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Nuestras Direcciones</h3>
+                        <p>Tenemos dos ubicaciones estratégicas para servirte mejor</p>
+                    </div>
+                </div>
+                
+                <!-- Dirección Principal -->
+                <div class="address-box">
+                    <h4><i class="fas fa-store"></i> Dirección Principal</h4>
+                    <p><strong>Av. Mariscal Sucre y Vía a la Ecuatoriana</strong></p>
+                    <p>Esquinera (chica de chaleco rojo)</p>
+                    <p><em>Atención al cliente</em></p>
+                    <a href="https://maps.app.goo.gl/ouk4HiHnJpNirfNs6" target="_blank" class="map-link">
+                        <i class="fas fa-map-marked-alt"></i> Ver en Google Maps
+                    </a>
+                </div>
+                
+                <!-- Dirección de Distribución -->
+                <div class="address-box">
+                    <h4><i class="fas fa-truck"></i> Centro de Distribución</h4>
+                    <p><strong>Calle Oe4F y F58A</strong></p>
+                    <p>Domicilio Logístico</p>
+                    <p><em>Exclusivo para distribución y logística</em></p>
+                    <a href="https://share.google/Kg7hEi2RJaiwxk9nZ" target="_blank" class="map-link">
+                        <i class="fas fa-map-marked-alt"></i> Ver en Google Maps
+                    </a>
+                    <span class="address-tag">Solo para distribución</span>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Teléfonos</h3>
+                        <p>+593 97 994 7191 (WhatsApp)</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Correo Electrónico</h3>
+                            <p>productosyata@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Viernes: 9:00 AM - 16:00 PM</p>
+                        <p>Sábados: 9:00 AM - 1:00 PM</p>
+                        <p>Domingos: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="note">
+                    <p><strong>Nota:</strong> La dirección de distribución es exclusiva para proveedores, transportistas y personal autorizado. Para atención al cliente, visitas o trámites administrativos, por favor diríjase a nuestra dirección principal.</p>
+                </div>
+            </div>
+            
+            <!-- Acciones de contacto (WhatsApp y redes sociales) -->
+            <div class="contact-actions">
+                <h2 class="info-title">Escríbenos Directamente</h2>
+                
+                <!-- Sección de WhatsApp -->
+                <div class="whatsapp-section">
+                    <div class="whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    
+                    <h3>¡Contáctanos por WhatsApp!</h3>
+                    
+                    <!-- Línea de emojis usando caracteres Unicode estándar -->
+                    <div class="emoji-line">
+                        <span class="emoji-icon">📱</span>
+                        <span class="emoji-icon">💬</span>
+                        <span class="emoji-icon">✉️</span>
+                    </div>
+                    
+                    <p>¡Hola! <span class="emoji-icon">👋</span> Estamos aquí para ayudarte. Escríbenos y te responderemos lo más pronto posible.</p>
+                    
+                    <span class="whatsapp-number">+593 97 994 7191</span>
+                    
+                    <!-- Línea de emojis usando caracteres Unicode estándar -->
+                    <div class="emoji-line">
+                        <span class="emoji-icon">⏰</span>
+                        <span class="emoji-icon">📅</span>
+                        <span class="emoji-icon">✅</span>
+                    </div>
+                    
+                    <p>Atención personalizada de Lunes a Sábado</p>
+                    
+                    <a href="https://wa.me/593979947191?text=¡Hola!%20Estoy%20interesado%20en%20sus%20productos%20o%20servicios" 
+                       target="_blank" 
+                       class="whatsapp-cta">
+                        <i class="fab fa-whatsapp"></i> Enviar Mensaje por WhatsApp
+                    </a>
+                    
+                    <!-- Línea de emojis usando caracteres Unicode estándar -->
+                    <div class="emoji-line" style="margin-top: 20px;">
+                        <span class="emoji-icon">🚀</span>
+                        <span class="emoji-icon">😊</span>
+                        <span class="emoji-icon">👍</span>
+                    </div>
+                </div>
+                
+                <!-- Sección de redes sociales -->
+                <div class="social-section">
+                    <h2 class="info-title">Síguenos en Redes Sociales</h2>
+                    
+                    <p style="text-align: center; margin-bottom: 20px; color: var(--gray-color);">
+                        Mantente al día con nuestras novedades, promociones y contenido exclusivo
+                    </p>
+                    
+                    <div class="social-icons">
+                        <a href="https://facebook.com/productosyata.ec" target="_blank" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        
+                        <a href="https://www.tiktok.com/@productosyata.ec" target="_blank" class="social-link tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="social-text">
+                        <p><span class="emoji-icon">📲</span> Síguenos para ver contenido exclusivo y promociones especiales</p>
+                        <p><span class="emoji-icon">🎯</span> Compartimos tips, novedades y mucho más</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-  
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <div class="footer-logo">
-                        <i class="fas fa-store"></i> Productos<span style="color: #4299e1;">YATA</span>
-                    </div>
-                    <p style="color: #cbd5e0; max-width: 300px;">Tu tienda confiable de productos de calidad para el hogar y más.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h3 style="color: white; margin-bottom: 15px;">Enlaces rápidos</h3>
-                    <a href="https://productosyata.com">Inicio</a>
-                    <a href="https://productosyata.com/productos">Productos</a>
-                    <a href="https://productosyata.com/comunidad">Comunidad</a>
-                    <a href="https://productosyata.com/contacto">Contacto</a>
-                </div>
-                
-                <div class="footer-links">
-                    <h3 style="color: white; margin-bottom: 15px;">Legal</h3>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Términos de servicio</a>
-                    <a href="#">Garantías</a>
-                    <a href="#">Devoluciones</a>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                &copy; 2023 ProductosYATA.com. Todos los derechos reservados. | <a href="mailto:info@productosyata.com" style="color: #4299e1;">info@productosyata.com</a>
-            </div>
-        </div>
-    </footer>
-
     <script>
-        // Manejo del formulario de contacto
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            
-            // Aquí normalmente enviarías los datos a un servidor
-            // Por ahora solo mostraremos un mensaje
-            alert(`¡Gracias ${name}! Hemos recibido tu mensaje sobre "${getSubjectText(subject)}". Te contactaremos a ${email} en breve.`);
-            
-            // Resetear el formulario
-            document.getElementById('contactForm').reset();
-        });
-        
-        function getSubjectText(value) {
-            const subjects = {
-                'consulta': 'Consulta general',
-                'soporte': 'Soporte técnico',
-                'ventas': 'Información de ventas',
-                'proveedor': 'Ser proveedor',
-                'colaboracion': 'Colaboración / Comunidad',
-                'otro': 'Otro asunto'
+        // Función para verificar compatibilidad de emojis
+        function verificarCompatibilidadEmojis() {
+            // Lista de emojis que estamos usando
+            const emojis = {
+                'telefono': '📱',
+                'burbuja': '💬',
+                'sobre': '✉️',
+                'mano': '👋',
+                'reloj': '⏰',
+                'calendario': '📅',
+                'check': '✅',
+                'cohete': '🚀',
+                'cara': '😊',
+                'pulgar': '👍',
+                'movil': '📲',
+                'diana': '🎯'
             };
-            return subjects[value] || 'Consulta';
+            
+            // Verificar si el navegador soporta emojis
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            ctx.textBaseline = 'top';
+            ctx.font = '32px Arial';
+            const text = '😀';
+            const medida = ctx.measureText(text);
+            const esCompatibilidadEmoji = medida.width > 100;
+            
+            // Si no hay compatibilidad con emojis, podemos usar iconos como respaldo
+            if (!esCompatibilidadEmoji) {
+                console.log('Este navegador tiene limitaciones con emojis. Considera usar iconos alternativos.');
+            }
+            
+            return esCompatibilidadEmoji;
         }
         
-        // FAQ interactivo
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
-                item.classList.toggle('active');
+        // Inicializar cuando el documento esté listo
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar compatibilidad
+            verificarCompatibilidadEmojis();
+            
+            // Efecto hover para el botón de WhatsApp
+            const whatsappBtn = document.querySelector('.whatsapp-cta');
+            if (whatsappBtn) {
+                whatsappBtn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px) scale(1.05)';
+                });
+                
+                whatsappBtn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            }
+            
+            // Animación sutil para los emojis
+            const emojiIcons = document.querySelectorAll('.emoji-icon');
+            emojiIcons.forEach((icon, index) => {
+                // Añadir animación de entrada
+                setTimeout(() => {
+                    icon.style.opacity = '1';
+                    icon.style.transform = 'scale(1)';
+                }, index * 100);
+                
+                // Añadir animación al pasar el ratón
+                icon.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.2) rotate(5deg)';
+                    this.style.transition = 'transform 0.3s ease';
+                });
+                
+                icon.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) rotate(0deg)';
+                });
             });
         });
-        
-        // Navegación activa
-        const currentPage = window.location.pathname;
-        const navLinks = document.querySelectorAll('nav a');
-        
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
-                link.style.color = '#4299e1';
-                link.style.fontWeight = 'bold';
-            }
-        });
-        
-        // Validación de teléfono (opcional)
-        document.getElementById('phone').addEventListener('input', function(e) {
-            this.value = this.value.replace(/[^0-9+]/g, '');
-        });
     </script>
+
+    
+</div>
+ <script src="./js/mobile-menu.js" type="module"></script>
 </body>
 </html>

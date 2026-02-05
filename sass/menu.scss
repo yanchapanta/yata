@@ -66,30 +66,33 @@
             gap: 2rem;
             justify-self: start;
             display: flex;
+            flex-direction: row;
         }
         
     }
 	& > div {
-		&:nth-child(2) {
+        &:nth-child(2) {
             display: none;
             justify-self: start;
+            flex-direction: row;
 			@include desktop() {
-               
+                
                 align-items: center;
                 gap: 2rem;
 				justify-self: end;
 				display: flex;
 				justify-self: start;
+                flex-direction: row;
 			}
 		}
 		&:last-child {
-			justify-self: end;
+            justify-self: end;
 			display: flex;
+            flex-direction: row;
 			@include centrarX(calc($var));
 		}
 	}
-	.logotipo{
-    }
+	
 }
 .footer-links {
             display: flex;

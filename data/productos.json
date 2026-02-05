@@ -1,217 +1,178 @@
 {
-  "categorias": [
-    "Limpieza Automotriz",
-    "Desinfectantes",
-    "Accesorios",
-    "Abrillantadores",
-    "Limpieza Interior",
-    "Cuidado de Llantas",
-    "Herramientas"
-  ],
+  "whatsapp": "593979947191",
   "productos": [
     {
-        "id": "001",
-        "codigo": "YT-001",
-        "nombre": "Difusor 8ml Aroma fresa",
-        "categoria": "Accesorios",
-        "descripcionCorta": "Difusor de ambiente con aroma a fresa para vehículos",
-        "descripcionDetallada": "Difusor de ambiente profesional con aroma a fresa natural. Duración hasta 30 días. Ideal para vehículos.",
-        "presentacion": "Unidad",
-        "unidad": "unidad",
-        "precio": 1.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379666/difusor_fresa_lzhpzd.jpg",
-        "estado": "activo",
-        "notas": "Producto más vendido",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
+      "id": "001",
+      "codigo": "YT-001",
+      "nombre": "Difusor aroma tipo cilindro",
+      "categoria": "Accesorios",
+      "descripcion": "Difusor de ambiente con aromas natural para vehículos",
+      "cantidad": "8ml",
+      "precio": 1.00,
+      "aromas": [" ", "Fresa", "Carro Nuevo", "Tentación","Elegante","Maracuyá","Vainilla","Lavanda"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770252331/difusor_aroma_s3pn1u.mp4",
+          "alt": "Video demostrativo difusor fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379666/difusor_fresa_lzhpzd.jpg",
+          "alt": "Imagen demostrativo fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379657/difusor_cnuevo_uedv9k.jpg",
+          "alt": "Imagen demostrativo fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379682/difusor_tentacion_fm7ebt.jpg",
+          "alt": "Imagen demostrativo fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379656/difusor_elegante_ukyrpe.jpg",
+          "alt": "Imagen demostrativo fresa"
+        },
+        {
+          "type": "image", 
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379679/difusor_maracuya_rfnsvr.jpg",
+          "alt": "Imagen demostrativo fresa"
+        },
+        {
+          "type": "image", 
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379681/difusor_vainilla_f0msuc.jpg",
+          "alt": "Imagen demostrativo fresa"
+        },
+        {
+          "type": "image", 
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379680/difusor_lavanda_w55w9p.jpg",
+          "alt": "Imagen demostrativo fresa"
+        }
+      ],
+      "estado": "activo"
     },
     {
-        "id": "002",
-        "codigo": "YT-002",
-        "nombre": "Ambientador fresa 100ml",
-        "categoria": "Aromatizantes",
-        "descripcionCorta": "Ambientador con fragancia a fresa de larga duración",
-        "descripcionDetallada": "Ambientador líquido con aroma a fresa para espacios interiores. Duración extendida.",
-        "presentacion": "Unidad",
-        "unidad": "unidad",
-        "precio": 2.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/f_webp/v1760379627/ambientador_cnuevo_r7ldau.jpg",
-        "estado": "activo",
-        "notas": "",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
+      "id": "002",
+      "codigo": "YT-002",
+      "nombre": "Difusor aroma tipo manzana",
+      "categoria": "Accesorios",
+      "descripcion": "Difusor de ambiente con aromas natural para vehículos",
+      "cantidad": "6ml",
+      "precio": 1.00,
+      "aromas": [" ", "Fresa",  "Pasion","Tentación"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770260885/VID_manzanalleno_wmj2me.mp4",
+          "alt": "Video demostrativo difusor fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770261502/IMG_20260204_203822_251_q2nupz.jpg",
+          "alt": "Imagen demostrativo fresa"
+        },
+        
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770261502/IMG_20260204_203755_376_xhajah.jpg",
+          "alt": "Imagen demostrativo fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770261501/IMG_20260204_203707_900_t6dzwk.jpg",
+          "alt": "Imagen demostrativo fresa"
+        }
+      ],
+      "estado": "activo"
     },
     {
-        "id": "003",
-        "codigo": "YT-003",
-        "nombre": "Desinfectante Aroma fuerte Tentación 400ml",
-        "categoria": "Limpieza",
-        "descripcionCorta": "Desinfectante con aroma tentación para superficies",
-        "descripcionDetallada": "Desinfectante eficaz con agradable aroma para limpieza de superficies.",
-        "presentacion": "Unidad",
-        "unidad": "unidad",
-        "precio": 1.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379652/desinfectante_tentacion_enytt8.jpg",
-        "estado": "activo",
-        "notas": "",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
+      "id": "002",
+      "codigo": "YT-001",
+      "nombre": "Mochila para moto",
+      "categoria": "Accesorios",
+      "descripcion": "Mochila para Moto ",
+      "cantidad": "1 Unidad",
+      "precio": 20.00,
+      "aromas": [" ", "Negro", "Azul"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770259705/mochila_s6fv1k.mp4",
+          "alt": "Video demostrativo difusor fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770260315/mochilas_cnv4ne.png",
+          "alt": "Imagen demostrativo fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770260315/mochilas_cnv4ne.png",
+          "alt": "Imagen demostrativo fresa"
+        }
+      ],
+      "estado": "activo"
     },
     {
-        "id": "004",
-        "codigo": "YT-004",
-        "nombre": "Abrillantador universal 100ml",
-        "categoria": "Limpieza",
-        "descripcionCorta": "Abrillantador para todo tipo de superficies",
-        "descripcionDetallada": "Abrillantador universal que proporciona brillo y protección a superficies.",
-        "presentacion": "Unidad",
-        "unidad": "unidad",
-        "precio": 2.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379625/abrillantador_universal_mfdc4f.jpg",
-        "estado": "activo",
-        "notas": "",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
+      "id": "002",
+      "codigo": "YT-001",
+      "nombre": "Car Perfume",
+      "categoria": "Accesorios",
+      "descripcion": "Car Perfume, llerenador de perfume para difusor de automovil  ",
+      "cantidad": "100 ml",
+      "precio": 5.00,
+      "aromas": [" ", "Vainilla", "Carro Nuevo"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770260886/VID_recargadifusor_uqogas.mp4",
+          "alt": "Video demostrativo difusor fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770262947/IMG_20260204_203356_421_gc7vqc.jpg",
+          "alt": "Imagen demostrativo fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770262947/IMG_20260204_203346_867_rvnhdr.jpg",
+          "alt": "Imagen demostrativo fresa"
+        }
+      ],
+      "estado": "activo"
     },
     {
-        "id": "005",
-        "codigo": "YT-005",
-        "nombre": "Brillo de llantas",
-        "categoria": "Limpieza",
-        "descripcionCorta": "Desinfectante con aroma intenso para limpieza profunda",
-        "descripcionDetallada": "Desinfectante de potencia profesional con aroma duradero.",
-        "presentacion": "Unidad",
-        "unidad": "unidad",
-        "precio": 1.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379630/brillo_llantas_u4mgwm.jpg",
-        "estado": "activo",
-        "notas": "",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
-    },
-    {
-        "id": "006",
-        "codigo": "YT-006",
-        "nombre": "Almoral 300ml aroma fresa",
-        "categoria": "Aromatizantes",
-        "descripcionCorta": "Aromatizante ambiental con esencia de fresa",
-        "descripcionDetallada": "Aromatizante Almoral con fragancia a fresa para ambientes frescos.",
-        "presentacion": "Unidad",
-        "unidad": "unidad",
-        "precio": 1.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379625/almoral_tgzglg.jpg",
-        "estado": "activo",
-        "notas": "",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
-    },
-    {
-        "id": "007",
-        "codigo": "YT-007",
-        "nombre": "Aceite vaselina aroma coco 360ml",
-        "categoria": "Cuidado Personal",
-        "descripcionCorta": "Aceite de vaselina con aroma a coco para hidratación",
-        "descripcionDetallada": "Aceite de vaselina enriquecido con aroma a coco para cuidado de la piel.",
-        "presentacion": "Unidad",
-        "unidad": "unidad",
-        "precio": 2.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379624/aceite_zjgdse.jpg",
-        "estado": "activo",
-        "notas": "",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
-    },
-    {
-        "id": "008",
-        "codigo": "YT-008",
-        "nombre": "Toalla microfibra 50cmx50cm",
-        "categoria": "Accesorios",
-        "descripcionCorta": "Toalla de microfibra para limpieza y secado",
-        "descripcionDetallada": "Toalla de microfibra de alta absorción para múltiples usos.",
-        "presentacion": "Unidad",
-        "unidad": "unidad",
-        "precio": 1.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379714/microfibra_azul_pwzpnb.jpg",
-        "estado": "activo",
-        "notas": "",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
-    },
-    {
-        "id": "009",
-        "codigo": "YT-009",
-        "nombre": "Franela 50cmx50cm",
-        "categoria": "Accesorios",
-        "descripcionCorta": "Franela de tela para limpieza general",
-        "descripcionDetallada": "Franela de tela suave ideal para labores de limpieza.",
-        "presentacion": "Unidad",
-        "unidad": "unidad",
-        "precio": 1.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379700/franela_roja_gp1szw.jpg",
-        "estado": "activo",
-        "notas": "",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
-    },
-    {
-        "id": "010",
-        "codigo": "YT-010",
-        "nombre": "Guaipe funda 9 unidades",
-        "categoria": "Accesorios",
-        "descripcionCorta": "Paquete de guaipes para limpieza",
-        "descripcionDetallada": "Funda de guaipes de tela para uso múltiple en limpieza.",
-        "presentacion": "Funda x 9 unidades",
-        "unidad": "funda",
-        "precio": 1.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379706/guaype_blanco_oeglxx.jpg",
-        "estado": "activo",
-        "notas": "",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
-    },
-    {
-        "id": "011",
-        "codigo": "YT-011",
-        "nombre": "Guaipe funda 6 unidades",
-        "categoria": "Accesorios",
-        "descripcionCorta": "Paquete de guaipes de colores",
-        "descripcionDetallada": "Funda de guaipes coloridos para limpieza general.",
-        "presentacion": "Funda x 6 unidades",
-        "unidad": "funda",
-        "precio": 1.00,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760379708/guaype_color_ig8tfp.jpg",
-        "estado": "activo",
-        "notas": "",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
-    },
-    {
-        "id": "012",
-        "codigo": "YT-012",
-        "nombre": "Difusor 8ml Envase negro",
-        "categoria": "Accesorios",
-        "descripcionCorta": "Difusor ambiental en envase negro elegante",
-        "descripcionDetallada": "Difusor de ambiente en envase negro con variedad de aromas.",
-        "presentacion": "Unidad",
-        "unidad": "unidad",
-        "precio": 0.33,
-        "iva": 12,
-        "imagen": "https://res.cloudinary.com/duhjr6cvp/image/upload/f_webp/v1760451148/difusor_envase_negro_dgcmxq.png",
-        "estado": "activo",
-        "notas": "Nuevo producto",
-        "fechaCreacion": "2024-01-15",
-        "fechaActualizacion": "2024-01-15"
+      "id": "002",
+      "codigo": "YT-001",
+      "nombre": "Mochila para moto",
+      "categoria": "Accesorios",
+      "descripcion": "Mochila para Moto ",
+      "cantidad": "1 Unidad",
+      "precio": 20.00,
+      "aromas": [" ", "Negro", "Azul"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770259705/mochila_s6fv1k.mp4",
+          "alt": "Video demostrativo difusor fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770260315/mochilas_cnv4ne.png",
+          "alt": "Imagen demostrativo fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770260315/mochilas_cnv4ne.png",
+          "alt": "Imagen demostrativo fresa"
+        }
+      ],
+      "estado": "activo"
     }
-   ]
+    
+   
+  ]
 }

@@ -1,0 +1,302 @@
+// Variables 
+$primary-color: rgb(6, 15, 99);
+$secondary-color: #25D366;
+$text-color: #333;
+$light-gray: #f5f5f5;
+$medium-gray: #e0e0e0;
+$dark-gray: #666;
+$white: #ffffff;
+$shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin grid-responsive($min-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($min-width, 1fr));
+    gap: 20px;
+}
+
+@mixin transition($property: all, $duration: 0.3s) {
+    transition: $property $duration ease;
+}
+
+// Reset y estilos base
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: $text-color;
+    background-color: $light-gray;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// Sección de productos
+.products-section {
+    padding: 40px 0;
+    
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2rem;
+        color: darken($primary-color, 20%);
+    }
+}
+
+// Grid de productos
+.products-grid {
+    @include grid-responsive(280px);
+    
+    @media (min-width: 768px) {
+        @include grid-responsive(280px);
+    }
+    
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+// Tarjeta de producto
+.product-card {
+    background: $white;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $shadow;
+    @include transition;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+}
+
+// Carrusel
+.product-carousel {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    
+    @media (min-width: 768px) {
+        height: 280px;
+    }
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    @include transition(transform);
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    height: 100%;
+    position: relative;
+    
+    video, img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .aroma-indicator {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        
+        .aroma-badge {
+            display: inline-block;
+            background: rgba($primary-color, 0.9);
+            color: $white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    }
+}
+
+// Controles del carrusel
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 10;
+    
+    button {
+        background: rgba($white, 0.8);
+        border: none;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        @include flex-center;
+        cursor: pointer;
+        @include transition;
+        
+        &:hover {
+            background: $white;
+            transform: scale(1.1);
+        }
+        
+        i {
+            color: $dark-gray;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.carousel-dots {
+    @include flex-center;
+    gap: 8px;
+    padding: 15px 0;
+    
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $medium-gray;
+        cursor: pointer;
+        @include transition;
+        
+        &.active {
+            background: $primary-color;
+            transform: scale(1.2);
+        }
+    }
+}
+
+// Información del producto
+.product-info {
+    padding: 20px;
+    
+    .product-price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $primary-color;
+        margin-bottom: 5px;
+    }
+    
+    .product-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: $text-color;
+    }
+    
+    .product-description {
+        font-size: 0.9rem;
+        color: $dark-gray;
+        margin-bottom: 15px;
+    }
+    
+    .product-ml {
+        display: inline-block;
+        background: $light-gray;
+        padding: 3px 10px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+        color: $dark-gray;
+    }
+}
+
+// Botón de WhatsApp
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: $secondary-color;
+    color: $white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: $border-radius;
+    font-weight: 600;
+    @include transition;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    
+    &:hover {
+        background: darken($secondary-color, 10%);
+        transform: translateY(-2px);
+    }
+    
+    i {
+        font-size: 1.2rem;
+    }
+}
+
+// Loading skeleton (para mientras cargan las imágenes)
+.loading-skeleton {
+    .product-carousel {
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+    }
+    
+    .product-info {
+        div {
+            height: 20px;
+            background: $light-gray;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            
+            &:first-child {
+                width: 30%;
+            }
+            
+            &:nth-child(2) {
+                width: 70%;
+            }
+            
+            &:last-child {
+                width: 100%;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+// Optimizaciones de imágenes
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+// Lazy loading
+.lazy {
+    opacity: 0;
+    @include transition(opacity);
+    
+    &.loaded {
+        opacity: 1;
+    }
+}

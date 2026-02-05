@@ -247,11 +247,13 @@ a:hover {
     gap: 2rem;
     justify-self: start;
     display: flex;
+    flex-direction: row;
   }
 }
 .menu-header-phone > div:nth-child(2) {
   display: none;
   justify-self: start;
+  flex-direction: row;
 }
 @media only screen and (min-width: 63em) {
   .menu-header-phone > div:nth-child(2) {
@@ -260,15 +262,18 @@ a:hover {
     justify-self: end;
     display: flex;
     justify-self: start;
+    flex-direction: row;
   }
 }
 .menu-header-phone > div:last-child {
   justify-self: end;
   display: flex;
+  flex-direction: row;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
 .footer-links {
   display: flex;
   flex-direction: column;

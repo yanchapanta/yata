@@ -1,0 +1,213 @@
+// Variables
+$primary-color: #1a365d; // Azul oscuro primario
+$white: #ffffff;
+$hover-color: lighten($primary-color, 15%);
+$shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$transition-speed: 0.3s;
+
+
+// Botón hamburguesa
+.hamburger-btn {
+    display: none; // Oculto por defecto
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    padding: 12px;
+    margin-left: -12px; // Ajuste para alinear a la izquierda
+    
+    &:hover .hamburger-icon span {
+        background-color: $hover-color;
+    }
+    
+    @media (max-width: 767px) {
+        display: block; // Visible solo en móvil
+    }
+}
+
+.hamburger-icon {
+    width: 24px;
+    height: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $primary-color;
+        transition: all $transition-speed ease;
+        border-radius: 2px;
+        
+        &:nth-child(1) {
+            width: 80%;
+        }
+        
+        &:nth-child(3) {
+            width: 60%;
+        }
+    }
+    
+    // Animación cuando el menú está abierto
+    .mobile-menu.active & {
+        span {
+            background-color: $white;
+            
+            &:nth-child(1) {
+                width: 100%;
+                transform: rotate(45deg) translate(6px, 6px);
+            }
+            
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            
+            &:nth-child(3) {
+                width: 100%;
+                transform: rotate(-45deg) translate(6px, -6px);
+            }
+        }
+    }
+}
+
+// Menú móvil
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity $transition-speed ease, visibility $transition-speed ease;
+    
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        
+        .mobile-menu__sidebar {
+            transform: translateX(0);
+        }
+        
+        .mobile-menu__overlay {
+            opacity: 1;
+        }
+    }
+}
+
+.mobile-menu__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity $transition-speed ease;
+}
+
+.mobile-menu__sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: $primary-color;
+    transform: translateX(-100%);
+    transition: transform $transition-speed ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-menu__header {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba($white, 0.1);
+}
+
+.mobile-menu__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+        background-color: rgba($white, 0.1);
+    }
+    
+    svg {
+        display: block;
+    }
+}
+
+.mobile-menu__nav {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mobile-menu__link {
+    color: $white;
+    text-decoration: none;
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 4px;
+        background-color: rgba($white, 0);
+        transition: background-color 0.3s ease;
+    }
+    
+    &:hover {
+        background-color: rgba($white, 0.1);
+        padding-left: 30px;
+        color: lighten($primary-color, 40%);
+        
+        &::before {
+            background-color: rgba($white, 0.3);
+        }
+    }
+    
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+// Media queries
+@media (min-width: 768px) {
+    .hamburger-btn {
+        display: none !important; // Fuerza ocultar en desktop
+    }
+    
+    .mobile-menu {
+        display: none !important; // Fuerza ocultar menú móvil
+    }
+}
+
+// Estilos para cuando el menú está abierto (bloquea scroll
+body.menu-open {
+    overflow: hidden;
+    
+    @media (min-width: 768px) {
+        overflow: auto;
+    }
+}
+
