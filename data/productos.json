@@ -7,7 +7,7 @@
       "nombre": "Difusor aroma tipo cilindro",
       "categoria": "Accesorios",
       "descripcion": "Difusor de ambiente con aromas natural para vehículos",
-      "cantidad": "8ml",
+      "cantidad": "7ml",
       "precio": 1.00,
       "aromas": [" ", "Fresa", "Carro Nuevo", "Tentación","Elegante","Maracuyá","Vainilla","Lavanda"],
       "media": [
@@ -57,46 +57,148 @@
     {
       "id": "002",
       "codigo": "YT-002",
-      "nombre": "Difusor aroma tipo manzana",
+      "nombre": "Difusor aroma tipo diamante",
       "categoria": "Accesorios",
       "descripcion": "Difusor de ambiente con aromas natural para vehículos",
-      "cantidad": "6ml",
+      "cantidad": "8ml",
       "precio": 1.00,
-      "aromas": [" ", "Fresa",  "Pasion","Tentación"],
+      "aromas": [" ", "Lavanda", "Frutal", "Elegante","Chicle","Carro Nuevo","Canela","Tentación"],
       "media": [
         {
           "type": "video",
-          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770260885/VID_manzanalleno_wmj2me.mp4",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770752954/VID_diamante_nsqfnk.mp4",
           "alt": "Video demostrativo difusor fresa"
         },
         {
           "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770261502/IMG_20260204_203822_251_q2nupz.jpg",
-          "alt": "Imagen demostrativo fresa"
-        },
-        
-        {
-          "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770261502/IMG_20260204_203755_376_xhajah.jpg",
-          "alt": "Imagen demostrativo fresa"
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770753297/diamante_lavanda_xmcyiz.jpg",
+          "alt": "Imagen demostrativo lavanda"
         },
         {
           "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770261501/IMG_20260204_203707_900_t6dzwk.jpg",
-          "alt": "Imagen demostrativo fresa"
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770753296/diamante_frutal_bq8kp7.jpg",
+          "alt": "Imagen demostrativo frutal"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770753295/diamante_elegante_upkloj.jpg",
+          "alt": "Imagen demostrativo elegante"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770753294/diamante_chicle_drzd2e.jpg",
+          "alt": "Imagen demostrativo chicle"
+        },
+        {
+          "type": "image", 
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770753291/diamante_carronuevo_te8uim.jpg",
+          "alt": "Imagen demostrativo Canela"
+        },
+        {
+          "type": "image", 
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770753290/diamante_tentacion_fio7hz.jpg",
+          "alt": "Imagen demostrativo Tentación"
         }
       ],
       "estado": "activo"
     },
     {
-      "id": "002",
-      "codigo": "YT-001",
+      "id": "003",
+      "codigo": "YT-003",
+      "nombre": "Difusor aroma tipo manzana",
+      "categoria": "Accesorios",
+      "descripcion": "Difusor de ambiente con aromas natural para vehículos",
+      "cantidad": "5ml",
+      "precio": 1.00,
+      "aromas": [" ", "Victoria",  "Pasion","Elegante","Fresa","Chicle" ,"Canela"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770752934/VID_manzana_s2hb1r.mp4",
+          "alt": "Video demostrativo difusor fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770754011/manzana_victoria_apfu6j.jpg",
+          "alt": "Imagen demostrativo Victoria"
+        },
+        
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770754008/manzana_pasion_wwriqf.jpg",
+          "alt": "Imagen demostrativo Pasion"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770754006/manzana_elegante_wvoyw3.jpg",
+          "alt": "Imagen demostrativo elegante"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770754006/manzana_fresa_eafzrv.jpg",
+          "alt": "Imagen demostrativo Fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770754004/manzana_chicle_ssdgin.jpg",
+          "alt": "Imagen demostrativo Chicle"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770754003/manzana_canela_l0ffcs.jpg",
+          "alt": "Imagen demostrativo Canel"
+        }
+      ],
+      "estado": "activo"
+    },
+    {
+      "id": "004",
+      "codigo": "YT-004",
+      "nombre": "Difusor aroma tipo redondo",
+      "categoria": "Accesorios",
+      "descripcion": "Difusor de ambiente con aromas natural para vehículos",
+      "cantidad": "6ml",
+      "precio": 1.00,
+      "aromas": [" ", "Pasion","Maracuyá","Tentación","Carro nuevo"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770755114/VID_redonde2_wjtkl8.mp4",
+          "alt": "Video demostrativo difusor fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770755290/redondo_pasion_aqb64p.jpg",
+          "alt": "Imagen demostrativo Pasion"
+        },        
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770755290/redondo_maracuya_xnnf9d.jpg",
+          "alt": "Imagen demostrativo maracuyá"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770755290/redonde_tentaci%C3%B3n_rrgs4y.jpg",
+          "alt": "Imagen demostrativo Tentación"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770755288/redonde_carronuevo_t6kjp7.jpg",
+          "alt": "Imagen demostrativo carro nuevo"
+        }
+        
+      ],
+      "estado": "activo"
+    },
+    {
+      "id": "005",
+      "codigo": "YT-005",
       "nombre": "Mochila para moto",
       "categoria": "Accesorios",
       "descripcion": "Mochila para Moto ",
       "cantidad": "1 Unidad",
       "precio": 20.00,
-      "aromas": [" ", "Negro", "Azul"],
+      "aromas": [" ", "Mochila moto 01", "Mochila moto 02", "Mochila moto 03", "Mochila moto 04"],
       "media": [
         {
           "type": "video",
@@ -105,41 +207,51 @@
         },
         {
           "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770260315/mochilas_cnv4ne.png",
-          "alt": "Imagen demostrativo fresa"
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770756096/mochilamoto6_sdgxyk.jpg",
+          "alt": "Imagen 01 demostrativo mochila para moto"
         },
         {
           "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770260315/mochilas_cnv4ne.png",
-          "alt": "Imagen demostrativo fresa"
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770756097/mochila_negro_syyjxs.jpg",
+          "alt": "Imagen 02 demostrativo mochila para moto"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770756093/mochilamoto0_yzls4x.jpg",
+          "alt": "Imagen 03 demostrativo mochila para moto"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770756097/mochila_negro_syyjxs.jpg",
+          "alt": "Imagen 04 demostrativo mochila para moto"
         }
       ],
       "estado": "activo"
     },
     {
-      "id": "002",
-      "codigo": "YT-001",
+      "id": "006",
+      "codigo": "YT-006",
       "nombre": "Car Perfume",
       "categoria": "Accesorios",
-      "descripcion": "Car Perfume, llerenador de perfume para difusor de automovil  ",
+      "descripcion": "Ambientador de automóvil",
       "cantidad": "100 ml",
-      "precio": 5.00,
-      "aromas": [" ", "Vainilla", "Carro Nuevo"],
+      "precio": 2.00,
+      "aromas": [" ", "Vainilla", "Tentación"],
       "media": [
         {
           "type": "video",
-          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770260886/VID_recargadifusor_uqogas.mp4",
-          "alt": "Video demostrativo difusor fresa"
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770260788/VID_ambientador_jr5pbc.mp4",
+          "alt": "Video demostrativo ambientador automóvil"
         },
         {
           "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770262947/IMG_20260204_203356_421_gc7vqc.jpg",
-          "alt": "Imagen demostrativo fresa"
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379629/ambientador_vainilla_opu8au.jpg",
+          "alt": "Imagen demostrativo vanilla"
         },
         {
           "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770262947/IMG_20260204_203346_867_rvnhdr.jpg",
-          "alt": "Imagen demostrativo fresa"
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379628/ambientador_tentacion_par465.jpg",
+          "alt": "Imagen demostrativo tentación"
         }
       ],
       "estado": "activo"
