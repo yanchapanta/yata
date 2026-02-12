@@ -62,7 +62,7 @@
       "descripcion": "Difusor de ambiente con aromas natural para vehículos",
       "cantidad": "8ml",
       "precio": 1.00,
-      "aromas": [" ", "Lavanda", "Frutal", "Elegante","Chicle","Carro Nuevo","Canela","Tentación"],
+      "aromas": [" ","Lavanda", "Frutal", "Elegante","Chicle","Carro Nuevo","Canela","Tentación"],
       "media": [
         {
           "type": "video",
@@ -110,7 +110,7 @@
       "descripcion": "Difusor de ambiente con aromas natural para vehículos",
       "cantidad": "5ml",
       "precio": 1.00,
-      "aromas": [" ", "Victoria",  "Pasion","Elegante","Fresa","Chicle" ,"Canela"],
+      "aromas": [" ", "Victoria","Pasion","Elegante","Fresa","Chicle" ,"Canela"],
       "media": [
         {
           "type": "video",
@@ -193,6 +193,163 @@
     {
       "id": "005",
       "codigo": "YT-005",
+      "nombre": "Almoral ,Brillo llantas,Abrillandador universal",
+      "categoria": "Accesorios",
+      "descripcion": "Almoral para tablero ($1),Brillo para llantas exclusivo solo llantas($1), Abrillantador Universal limpia y saca abrillo de tableros y de llantas ($2) ",
+      "cantidad": "1 Unidad",
+      "precio": 2.00, 
+      "aromas": [" ", "Almoral → ($1)", "Brillo para llantas ($1)", "Abrillantador universal ($2)"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770859647/tipobrillos_iajvlz.mp4",
+          "alt": "Video demostrativo difusor fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379625/almoral_tgzglg.jpg",
+          "alt": "Imagen 01 demostrativo almoral"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379630/brillo_llantas_u4mgwm.jpg",
+          "alt": "Imagen 02 demostrativo brillo para llantas"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379625/abrillantador_universal_mfdc4f.jpg",
+          "alt": "Imagen 03 demostrativo Abrillantador universal"
+        }
+      ],
+      "estado": "activo"
+    },
+    {
+      "id": "006",
+      "codigo": "YT-006",
+      "nombre": "Ambientador",
+      "categoria": "Accesorios",
+      "descripcion": "Ambientador de automóvil",
+      "cantidad": "100 ml",
+      "precio": 2.00,
+      "aromas": [" ", "Vainilla", "Tentación", "Elegante", "Maracuyá"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770260788/VID_ambientador_jr5pbc.mp4",
+          "alt": "Video demostrativo ambientador automóvil"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379629/ambientador_vainilla_opu8au.jpg",
+          "alt": "Imagen demostrativo vanilla"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379628/ambientador_tentacion_par465.jpg",
+          "alt": "Imagen demostrativo tentación"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379636/ambientador_elegante_stpo72.jpg",
+          "alt": "Imagen demostrativo elegante"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379628/ambientador_maracuya_oycjor.jpg",
+          "alt": "Imagen demostrativo maracuyá"
+        }
+      ],
+      "estado": "activo"
+    },
+    {
+      "id": "007",
+      "codigo": "YT-007",
+      "nombre": "Car perfume(dispensador o chisguete)",
+      "categoria": "Accesorios",
+      "descripcion": "Recargar de  difusor → car perfume o Chisguete → car perfume ",
+      "cantidad": "1 Unidad",
+      "precio": 5.00,
+      "aromas": [" ", "Vainilla","Carro Nuevo","Victoria","elegante"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770260886/VID_recargadifusor_uqogas.mp4",
+          "alt": "Video demostrativo Recargar difusor"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770262947/IMG_20260204_203356_421_gc7vqc.jpg",
+          "alt": "Imagen demostrativo car perfume vainilla"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770262947/IMG_20260204_203346_867_rvnhdr.jpg",
+          "alt": "Imagen demostrativo car perfume carro nuevo"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770846472/carperfume_victoria_dispensador_b2jt8e.jpg",
+          "alt": "Imagen demostrativo car perfume victoria"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770846472/carperfume_elegante_iiamls.jpg",
+          "alt": "Imagen demostrativo car perfume chisguete elegante"
+        }
+      ],
+      "estado": "activo"
+    },
+     {
+      "id": "008",
+      "codigo": "YT-008",
+      "nombre": "Ambiental y  desinfectante",
+      "categoria": "Accesorios",
+      "descripcion": "Ambiental y  desinfectante para oficina,carro y hogar",
+      "cantidad": "400 ml",
+      "precio": 1.00,
+      "aromas": [" ", "Elegante", "Tentación", "Fragancia baby","Fresa","Vainilla","Canela manzana"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770858667/VID_ambiental_efrqpg.mp4",
+          "alt": "Video demostrativo difusor fresa"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770861005/desinfectante_elegante_irprjp.jpg",
+          "alt": "Imagen 01 demostrativo Ambiental"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770861004/desinfectante_tentacion_tsukbe.jpg",
+          "alt": "Imagen 02 demostrativo Ambiental"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770861003/desinfectante_baby_eonm2o.jpg",
+          "alt": "Imagen 03 demostrativo Ambiental"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770861004/desinfectante_fresa_ccdnda.jpg",
+          "alt": "Imagen 04 demostrativo Ambiental"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770861003/desinfectante_vainilla_zh5fwu.jpg",
+          "alt": "Imagen 05 demostrativo Ambiental"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770861003/desinfectante_cnmanzana_noww82.jpg",
+          "alt": "Imagen 05 demostrativo Ambiental"
+        }
+      ],
+      "estado": "activo"
+    },
+     {
+      "id": "009",
+      "codigo": "YT-009",
       "nombre": "Mochila para moto",
       "categoria": "Accesorios",
       "descripcion": "Mochila para Moto ",
@@ -229,57 +386,143 @@
       "estado": "activo"
     },
     {
-      "id": "006",
-      "codigo": "YT-006",
-      "nombre": "Car Perfume",
-      "categoria": "Accesorios",
-      "descripcion": "Ambientador de automóvil",
-      "cantidad": "100 ml",
-      "precio": 2.00,
-      "aromas": [" ", "Vainilla", "Tentación"],
+      "id": "010",
+      "codigo": "YT-010",
+      "nombre": "",
+      "categoria": "Asiento tipo dona",
+      "descripcion": "Asiento tipo dona tipo dona para carro",
+      "cantidad": "1 Unidad",
+      "precio": 5.00,
+      "aromas": [" ", "Amarillo","Verde","Rojo amarillo","rojo","Azul"],
       "media": [
         {
           "type": "video",
-          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770260788/VID_ambientador_jr5pbc.mp4",
-          "alt": "Video demostrativo ambientador automóvil"
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770848653/dona_pnlul6.mp4",
+          "alt": "Video demostrativo "
         },
         {
           "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379629/ambientador_vainilla_opu8au.jpg",
-          "alt": "Imagen demostrativo vanilla"
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770752771/dona2_obheee.jpg",
+          "alt": "Imagen demostrativo Asiento tipo dona"
         },
         {
           "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1760379628/ambientador_tentacion_par465.jpg",
-          "alt": "Imagen demostrativo tentación"
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770752771/dona3_ze4ahk.jpg",
+          "alt": "Imagen demostrativo  Asiento tipo dona"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770752771/dona1_spfq5p.jpg",
+          "alt": "Imagen demostrativo  Asiento tipo dona"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770847565/dona_rojo_tjh46b.jpg",
+          "alt": "Imagen demostrativo  Asiento tipo dona"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770847566/dona_azul_tfmr7e.jpg",
+          "alt": "Imagen demostrativo  Asiento tipo dona"
         }
       ],
       "estado": "activo"
     },
     {
-      "id": "002",
-      "codigo": "YT-001",
-      "nombre": "Mochila para moto",
+      "id": "011",
+      "codigo": "YT-011",
+      "nombre": "Basurero de carro",
       "categoria": "Accesorios",
-      "descripcion": "Mochila para Moto ",
+      "descripcion": "Basurero para carro ",
       "cantidad": "1 Unidad",
-      "precio": 20.00,
-      "aromas": [" ", "Negro", "Azul"],
+      "precio": 2.00,
+      "aromas": [" ", "Redondo con cierre → $2","Plano con cierre → $1.5","Plano sin cierre → $1"],
       "media": [
         {
           "type": "video",
-          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770259705/mochila_s6fv1k.mp4",
-          "alt": "Video demostrativo difusor fresa"
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770849458/basurero_isucdp.mp4",
+          "alt": "Video demostrativo difusor Basurero para carro"
         },
         {
           "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770260315/mochilas_cnv4ne.png",
-          "alt": "Imagen demostrativo fresa"
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770855899/basureroredondo_cierre2_qqzpko.jpg",
+          "alt": "Imagen demostrativo Basurero para carro redondeo con cierre"
         },
         {
           "type": "image",
-          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770260315/mochilas_cnv4ne.png",
-          "alt": "Imagen demostrativo fresa"
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770855898/basureroplano_cierre_mn5ii1.jpg",
+          "alt": "Imagen demostrativo Basurero para carro plano con cierre"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770855899/basureroplano_nocierre_jokxpl.jpg",
+          "alt": "Imagen demostrativo Basurero para carro plano sin cierre"
+        }
+      ],
+      "estado": "activo"
+    },
+    {
+      "id": "012",
+      "codigo": "YT-012",
+      "nombre": "Pato para moto con luces",
+      "categoria": "Accesorios",
+      "descripcion": "Pato para moto con luces  ",
+      "cantidad": "1 Unidad",
+      "precio": 3.00,
+      "aromas": [" ", "Casco rosado", "Casco amarillo", "Casco negro"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770752917/VID_pato_liymte.mp4",
+          "alt": "Video demostrativo Pato para moto con luces"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770753012/pato_rosado_wqzvpw.jpg",
+          "alt": "Imagen demostrativo Pato para moto con luces"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770753012/pato_amarillo_exsf1y.jpg",
+          "alt": "Imagen demostrativo Pato para moto con luces"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770752959/pato_negro_giuc8e.jpg",
+          "alt": "Imagen demostrativo Pato para moto con luces"
+        }
+      ],
+      "estado": "activo"
+    },
+    {
+      "id": "013",
+      "codigo": "YT-013",
+      "nombre": "Perro adorno para carro",
+      "categoria": "Accesorios",
+      "descripcion": "Perro adorno para carro  ",
+      "cantidad": "1 Unidad",
+      "precio": 3.00,
+      "aromas": [" ", "Amarillo","Blanco","Amarillo y blanco"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770260885/VID_perro_pvz6bj.mp4",
+          "alt": "Video demostrativo Perro adorno para carro"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770857104/dog_yellow_alcmmn.jpg",
+          "alt": "Imagen demostrativo Perro adorno para carro"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770857103/dog_white_famrdy.jpg",
+          "alt": "Imagen demostrativo Perro adorno para carro"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770857105/dog_mix_lzmiu5.jpg",
+          "alt": "Imagen demostrativo Perro adorno para carro"
         }
       ],
       "estado": "activo"
