@@ -1,0 +1,151 @@
+{
+  "whatsapp": "593979947191",
+  "productos": [
+     {
+      "id": "001",
+      "codigo": "YT-001",
+      "logo": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770946836/DOMOVR_nlsims.png",
+      "nombre": "OPTI-DOMO TECH CÁMARAS DE SEGURIDAD",
+      "categoria": "Instalación profesional certificada",
+      "tipo": "Instalación profesional certificada",
+      "mstitulo1": "Vigila tu hogar o negocio 24/7",
+      "msdescripcion1": "desde tu celular. Instalación profesional.",
+      "mstitulo2": "Cubrimos:",
+      "msdescripcion2": "Casas, Negocios, Oficinas. Equipos con garantía..",
+      "servicios": ["Cámaras con visión nocturna","App móvil para monitoreo", "Detección de movimiento", "Grabación en la nube"],
+      "whatsapp": "593991062184",
+      "mswhatsapp": "cámaras de seguridad",
+      "direccion": "Av. Guayanay Ñan Oe1-136 y Av.Pedro Vicente Maldonado",
+      "horario": "L-S: 9am-4pm | Dom: 9am-1pm",
+      "trabajos": [" ","Proyecto 1","Proyecto 2","Proyecto 3","Proyecto 4","Proyecto 5","Proyecto 6","Proyecto 7","Proyecto 8"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770950924/VID_optidomo.tech_wfldec.mp4",
+          "alt": "Video demostrativo proyectos"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948809/proyecto1_icqe14.jpg",
+          "alt": "Imagen demostrativo proyecto 1"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948810/proyecto2_lfdupv.jpg",
+          "alt": "Imagen demostrativo proyecto 2"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948812/proyecto3_olemcz.jpg",
+          "alt": "Imagen demostrativo proyecto 3"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948813/proyecto4_bxtxkp.jpg",
+          "alt": "Imagen demostrativo proyecto 4"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948779/proyecto5_qr0wgy.jpg",
+          "alt": "Imagen demostrativo proyecto 5"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948806/proyecto6_kpkrof.jpg",
+          "alt": "Imagen demostrativo proyecto 6"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948807/proyecto7_te1kk6.jpg",
+          "alt": "Imagen demostrativo proyecto 7"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948807/proyecto8_umxkca.jpg",
+          "alt": "Imagen demostrativo proyecto 8"
+        }
+        
+      ],
+      "estado": "activo"
+    },
+    {
+      "id": "002",
+      "codigo": "YT-002",
+      "logo": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948171/logoTapiceria_eixuor.png",
+      "nombre": "Tapicería Automotriz Premium",
+      "categoria": "Especialistas en restauración de interiores",
+      "tipo": "Nuestros Trabajos",
+      "mstitulo1": "¿Asientos dañados arruinan tu auto?",
+      "msdescripcion1": "os renovamos con materiales premium.",
+      "mstitulo2": "C",
+      "msdescripcion2": "C.",
+      "servicios": ["Reparación de rasgaduras","Cambio completo de tapicería", "Personalización a medida", "Materiales resistentes"],
+      "whatsapp": "593988754199",
+      "mswhatsapp": "tapicería",
+      "direccion": "Av. Mariscal Sucre y Coronel Pedro Concha, Barrio Guamaní",
+      "horario": "L-V: 9am-4pm | Sáb: 9am-12pm",
+      "trabajos": [" ","Diseño 1","Diseño 2","Diseño 3","Diseño 4","Diseño 5","Diseño 6","Diseño 7","Diseño 8"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1770950250/vid_tapiceria_eiubbw.mp4",
+          "alt": "Video demostrativo diseños"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950268/trabajo1_jzewyu.jpg",
+          "alt": "Imagen demostrativo diseño 1"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950269/trabajo2_wegfei.jpg",
+          "alt": "Imagen demostrativo diseño 2"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950271/trabajo3_gvmung.jpg",
+          "alt": "Imagen demostrativo diseño 3"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950272/trabajo4_go4dvd.jpg",
+          "alt": "Imagen demostrativo diseño 4"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950273/trabajo5_zzbvl3.jpg",
+          "alt": "Imagen demostrativo diseño 5"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950276/trabajo6_gbqjyu.jpg",
+          "alt": "Imagen demostrativo diseño 6"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950278/trabajo7_itonju.jpg",
+          "alt": "Imagen demostrativo diseño 7"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950279/trabajo8_avyicr.jpg",
+          "alt": "Imagen demostrativo diseño 8"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950281/trabajo9_yivmu6.jpg",
+          "alt": "Imagen demostrativo diseño 9"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950284/trabajo10_yhsdmy.jpg",
+          "alt": "Imagen demostrativo diseño 10"
+        }
+        
+      ],
+      "estado": "activo"
+    }
+    
+   
+  ]
+}

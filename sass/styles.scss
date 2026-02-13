@@ -3,15 +3,13 @@
 @use 'general' as *;
 @use 'utilities' as *;
 @use 'browser-bar.scss' as *;
-@use 'login.scss' as *;
+
 @use 'acount.scss' as *;
 @use 'menu.scss' as *;
 @use 'home-1.scss' as *;
 // @use 'product-details.scss' as *;
-//@use 'shopping-card-1.scss' as *;
 
 @use 'menu-1.scss' as *;
-@use 'my-orders.scss' as *;
 @use 'mobile-menu.scss' as *;
 
 @use 'productos.scss' as *;
@@ -20,5 +18,6 @@
 @use 'mayorista.scss' as *;
 
 @use 'whatsapp' as *;
+
 @use 'footer' as *; 
 

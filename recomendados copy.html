@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- TÍTULO OPTIMIZADO PARA SEO -->
-    <title>Productos YATA | Comunidad Socios Recomendados</title>
+    <title>COPY SOCIOS</title>
     
     <!-- META DESCRIPTION MEJORADA -->
     <meta name="description" content="Productos YATA - Especialistas en limpieza automotriz. Shampoo para autos, ceras, abrillantadores, limpiadores de llantas. Calidad profesional y precios competitivos. Envíos a todo Ecuador.">
@@ -73,14 +73,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* ESTILOS GENERALES */
-      
-      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
-        } 
+        }
         
+      
+        
+             
+    
         
         /* TARJETAS DE SOCIOS */
         .socios-grid {
@@ -127,13 +143,11 @@
             gap: 20px;
             background: #f8f9fa;
             border-bottom: 1px solid #eee;
-            flex-wrap: nowrap;
         }
         
         .socio-icon {
             width: 70px;
             height: 70px;
-            min-width: 70px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -143,7 +157,7 @@
         }
         
         .tapiceria-icon {
-            background: linear-gradient(45deg, #f8f8f7c5, #ebe6e3a4);
+            background: linear-gradient(45deg, #8B4513, #D2691E);
         }
         
         .seguridad-icon {
@@ -426,7 +440,7 @@
     </style>
 </head>
 
-<body data-json="./data/yata_socios.json">
+<body >
 
      <!-- Menú móvil -->
     <div class="mobile-menu" id="mobileMenu">
@@ -484,11 +498,208 @@
         
           
         <div class="container">
-            <!-- ENCABEZADO DE LA PÁGINA -->   
-            <!-- GRID CON TODOS LOS SOCIOS -->
-            <div class="socios-grid" id="productosContainer">
-                <!-- Los productos se cargarán aquí dinámicamente -->
-            </div>
+            <!-- ENCABEZADO DE LA PÁGINA -->      
+            <!-- GRID CON AMBOS SOCIOS -->
+            <div class="socios-grid">
+                <!-- ========== SOCIO 1: TAPICERÍA ========== -->
+                <div class="socio-card tapiceria-card">
+                    <!-- Encabezado -->
+                    <div class="card-header">
+                        <div class="socio-icon tapiceria-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="socio-title">
+                            <h2>Tapicería Automotriz Premium</h2>
+                            <p class="tagline"><i class="fas fa-award"></i> Especialistas en restauración de interiores</p>
+                        </div>
+                    </div>
+    
+                    <!-- Galería -->
+                    <div class="gallery-section">
+                        <h3 class="gallery-title"><i class="fas fa-images"></i> Nuestros Trabajos</h3>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="img/foto/luxury-car.jpg" alt="Antes y después">
+                                <div class="gallery-label">Antes/Después</div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Detalle de costuras">
+                                <div class="gallery-label">Detalle Artesanal</div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Materiales premium">
+                                <div class="gallery-label">Materiales Premium</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Descripción -->
+                    <div class="description-section">
+                        <div class="description-text">
+                            <p><strong>¿Asientos dañados arruinan tu auto?</strong> Los renovamos con materiales premium.</p>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Reparación de rasgaduras</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Cambio completo de tapicería</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Personalización a medida</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Materiales resistentes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                   
+    
+                    <!-- Botón principal -->
+                    <div class="action-section">
+                        <a href="https://wa.me/593988754199?text=%C2%A1Hola!%20%F0%9F%91%8B%20Vi%20su%20contacto%20en%20la%20secci%C3%B3n%20de%20recomendados%20de%20Productos%20YATA%20%F0%9F%A7%BC.%20Me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20tapicer%C3%ADa%20para%20mi%20carro%20%F0%9F%93%97.%20%C2%A1Gracias!" 
+                           class="btn btn-whatsapp pulse" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar tapicería por WhatsApp
+                        </a>
+                    </div>
+    
+                    <!-- Información de contacto -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>📍 Taller:</h4>
+                                <p>Av. Mariscal Sucre</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>🕒 Horario:</h4>
+                                <p>L-V: 9am-4pm | Sáb: 9am-12pm</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+    
+                <!-- ========== SOCIO 2: SEGURIDAD ========== -->
+                <div class="socio-card seguridad-card">
+                    <!-- Encabezado -->
+                    <div class="card-header">
+                        <div class="socio-icon seguridad-icon">
+                            <img src="img/foto/DOMOVR.png" alt="logo">
+                        </div>
+                        <div class="socio-title">
+                            <h2>OPTI-DOMO TECH</h2>
+                            <h2>CÁMARAS DE SEGURIDAD</h2>
+                            <p class="tagline"><i class="fas fa-award"></i> Instalación profesional certificada</p>
+                        </div>
+                    </div>
+    
+                    <!-- Galería -->
+                    <div class="gallery-section">
+                        <h3 class="gallery-title"><i class="fas fa-images"></i> Nuestros Sistemas</h3>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="img/foto/proyecto7.jpeg" alt="Instalación profesional">
+                                <div class="gallery-label">Instalación Limpia</div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="App móvil">
+                                <div class="gallery-label">Detección Inteligente</div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Visión nocturna">
+                                <div class="gallery-label">Visión Nocturna</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Descripción -->
+                    <div class="description-section">
+                        <div class="description-text">
+                            <p><strong>Vigila tu hogar o negocio 24/7</strong> desde tu celular. Instalación profesional.</p>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Cámaras con visión nocturna</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>App móvil para monitoreo</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Detección de movimiento</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Grabación en la nube</span>
+                                </div>
+                            </div>
+                            
+                            <p style="margin-top: 15px; color: #2C3E50;">
+                                <i class="fas fa-shield-alt"></i> <strong>Cubrimos:</strong> Casas, Negocios, Oficinas. Equipos con garantía.
+                            </p>
+                        </div>
+                    </div>
+    
+                   
+    
+                    <!-- Botón principal -->
+                    <div class="action-section">
+                        <a href="https://wa.me/593991062184?text=Buen%20d%C3%ADa%2C%20vengo%20recomendado%20por%20la%20p%C3%A1gina%20de%20Productos%20YATA%20%F0%9F%A7%BC.%20Estoy%20interesado%20en%20informaci%C3%B3n%20y%20presupuestos%20para%20c%C3%A1maras%20de%20seguridad%20%F0%9F%9B%A1%EF%B8%8F%F0%9F%93%B8.%20Saludos." 
+                           class="btn btn-whatsapp pulse" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Contactar cámaras de seguridad por Whatsapp
+                        </a>
+                    </div>
+    
+                    <!-- Información de contacto -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>📍 Oficina:</h4>
+                                <p>Av. Guayanay Ñan Oe1-136 y Av. Maldonado</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>🕒 Horario:</h4>
+                                <p>L-S: 9am-4pm | Dom: 9am-1pm</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Botones secundarios -->
+                    <div class="action-section">
+                                               
+                        <a class="btn btn-catalog" href="https://drive.google.com/uc?export=download&id=1k8zk3HQWiRqAiyxbFwJg1MEr4O2EEd-1"
+                            download
+                            target="_blank">
+                            <i class="fas fa-download"></i> Descargar catálogo de paquetes
+                        </a>
+                    </div>
+                </div>
+            </div>           
         </div>
     </div>
         
@@ -564,10 +775,6 @@
     </script>
     <script src="js/styles.js"></script>
   
-
-
-     <script src="./js/socios.js" type="module"></script>
-    <script src="./js/carrusel_socios.js" type="module"></script>
     <script src="./js/mobile-menu.js" type="module"></script>
 </body>
 

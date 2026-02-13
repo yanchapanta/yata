@@ -84,6 +84,12 @@ body {
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 }
+/* ESTILOS ESENCIALES PARA EL CARRUSEL */
+.product-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
 // Carrusel
 .product-carousel {
