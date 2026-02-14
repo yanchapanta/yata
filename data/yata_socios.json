@@ -71,7 +71,7 @@
     {
       "id": "002",
       "codigo": "YT-002",
-      "logo": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948171/logoTapiceria_eixuor.png",
+      "logo": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1771086178/autolujos_auto_renas_clrjag.png",
       "nombre": "Tapicería Automotriz Premium",
       "categoria": "Especialistas en restauración de interiores",
       "tipo": "Nuestros Trabajos",
@@ -140,6 +140,63 @@
           "type": "image",
           "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770950284/trabajo10_yhsdmy.jpg",
           "alt": "Imagen demostrativo diseño 10"
+        }
+        
+      ],
+      "estado": "activo"
+    },
+    {
+      "id": "003",
+      "codigo": "YT-003",
+      "logo": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948171/logoTapiceria_eixuor.png",
+      "nombre": "Tapicería Autolujos Arenas",
+      "categoria": "Instalación Materia en tela",
+      "tipo": "Nuestros Trabajos",
+      "mstitulo1": "¿Asientos dañados arruinan tu auto?",
+      "msdescripcion1": "os renovamos con materiales premium.",
+      "mstitulo2": "C",
+      "msdescripcion2": "C.",
+      "servicios": ["Instación de Volantes","Tapicería de tela", "Personalización a medida", "Materiales resistentes"],
+      "whatsapp": "593979102129",
+      "mswhatsapp": "tapicería",
+      "direccion": "Av. Maldonado y S47D, En la gasolinera PETROECUADOR ¨El Beaterio¨",
+      "horario": "L-V: 9am-4pm | Sáb: 9am-12pm",
+      "trabajos": [" ","Diseño 1","Diseño 2","Diseño 3","Diseño 4","Diseño 5","Diseño 6"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1771085022/VID_NEGOCIO_desli2.mp4",
+          "alt": "Video demostrativo diseños"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1771085019/DISENIO1_zk9ozs.jpg",
+          "alt": "Imagen demostrativo diseño 1"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1771085018/DISENIO2_slkwwy.jpg",
+          "alt": "Imagen demostrativo diseño 2"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1771085018/DISENIO3_t7ygsn.jpg",
+          "alt": "Imagen demostrativo diseño 3"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1771085022/DISENIO4_bzjuil.jpg",
+          "alt": "Imagen demostrativo diseño 4"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1771085018/VOLANTE1_se9zkm.jpg",
+          "alt": "Imagen demostrativo diseño 5"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1771085019/DISENIO5_gxe6sm.jpg",
+          "alt": "Imagen demostrativo diseño 6"
         }
         
       ],
