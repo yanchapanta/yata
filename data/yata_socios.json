@@ -71,9 +71,9 @@
     {
       "id": "002",
       "codigo": "YT-002",
-      "logo": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1771086178/autolujos_auto_renas_clrjag.png",
-      "nombre": "Tapicería Automotriz Premium",
-      "categoria": "Especialistas en restauración de interiores",
+      "logo": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948171/logoTapiceria_eixuor.png",
+      "nombre": "TAPICERIA XTREME TUNING",
+      "categoria": "Especialistas en restauración de interiores premiun",
       "tipo": "Nuestros Trabajos",
       "mstitulo1": "¿Asientos dañados arruinan tu auto?",
       "msdescripcion1": "os renovamos con materiales premium.",
@@ -148,7 +148,7 @@
     {
       "id": "003",
       "codigo": "YT-003",
-      "logo": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770948171/logoTapiceria_eixuor.png",
+      "logo": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1771086178/autolujos_auto_renas_clrjag.png",
       "nombre": "Tapicería Autolujos Arenas",
       "categoria": "Instalación Materia en tela",
       "tipo": "Nuestros Trabajos",
@@ -159,7 +159,7 @@
       "servicios": ["Instación de Volantes","Tapicería de tela", "Personalización a medida", "Materiales resistentes"],
       "whatsapp": "593979102129",
       "mswhatsapp": "tapicería",
-      "direccion": "Av. Maldonado y S47D, En la gasolinera PETROECUADOR ¨El Beaterio¨",
+      "direccion": "Av. Maldonado y S47D, En la gasolinera PETROECUADOR ¨El Beaterio¨, frente a la parada Ecovia Bretaña",
       "horario": "L-V: 9am-4pm | Sáb: 9am-12pm",
       "trabajos": [" ","Diseño 1","Diseño 2","Diseño 3","Diseño 4","Diseño 5","Diseño 6"],
       "media": [
