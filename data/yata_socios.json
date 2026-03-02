@@ -201,6 +201,57 @@
         
       ],
       "estado": "activo"
+    },
+    {
+      "id": "004",
+      "codigo": "YT-004",
+      "logo": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1772465184/logo_xnl9n4.png",
+      "nombre": "Iglesia reformadas Luz de Vida",
+      "categoria": "Iglesia reformadas Luz de Vida",
+      "tipo": "Iglesia cristiana reformada",
+      "mstitulo1": "¿Buscas una iglesia con doctrina bíblica?",
+      "msdescripcion1": "Somos una congregación reformada comprometida con la Palabra de Dios.",
+      "mstitulo2": "Creemos en:",
+      "msdescripcion2": "La Biblia como autoridad final y en la gracia salvadora por fe en Cristo.",
+      "servicios": [
+        "Cultos dominicales",
+        "Escuela dominical",
+        "Estudio bíblico y oración",
+        "Ministerios congregacionales"
+      ],
+      "whatsapp": "593998197202",
+      "mswhatsapp": "Iglesia reformada",
+      "direccion": "Miguel Trujillo y Abel Meléndez, Chimbacalle, Quito.",
+      "horario": " | Dom: 10am-12pm",
+      "trabajos": ["Iglesias Reformadas","Sur de Quito","Sur de Quito","Norte de Quito El Inca","Tumbaco"],
+      "media": [
+        {
+          "type": "video",
+          "src": "https://res.cloudinary.com/duhjr6cvp/video/upload/v1772475925/vid_luzVida_ssgavz.mp4",
+          "alt": "Video demostrativo diseños"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1772465184/thumbnail_dcxhb0.jpg",
+          "alt": "Imagen demostrativo diseño 1"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1772465184/reformada_xiwgps.jpg",
+          "alt": "Imagen demostrativo diseño 2"
+        },
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1772465184/luz_vida_wcidyx.png",
+          "alt": "Imagen demostrativo el Inca 3"
+        } ,       
+        {
+          "type": "image",
+          "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1772465185/tumbaco_n6br4k.png",
+          "alt": "Imagen demostrativo Tumbaco 3"
+        }        
+      ],
+      "estado": "activo"
     }
     
    
