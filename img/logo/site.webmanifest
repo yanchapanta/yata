@@ -1,15 +1,15 @@
 {
-  "name": "productosyata",
-  "short_name": "YATA",
+  "name": "Productos Yata",
+  "short_name": "https://www.productosyata.com/",
   "icons": [
     {
-      "src": "/productosyata/img/logo/web-app-manifest-192x192.png",
+      "src": "/img/logo/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/productosyata/img/logo/web-app-manifest-512x512.png",
+      "src": "/img/logo/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

@@ -1,0 +1,13 @@
+{
+    "name": "Productos Yata",
+    "short_name": "Yata",
+    "icons": [
+        {
+            "src": "https://res.cloudinary.com/duhjr6cvp/image/upload/v1770946809/apple-touch-icon_fv0g5y.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff"
+}

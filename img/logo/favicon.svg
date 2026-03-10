@@ -1,12 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1.42312 12.2535C0.527839 10.6777 0 8.74009 0 6.64518C0 4.06371 0.801503 1.72103 2.10438 0H12.8956C14.1985 1.72103 15 4.06371 15 6.64518C15 8.74009 14.4722 10.6777 13.5769 12.2535H1.42312Z" fill="#060F63"></path>
-<mask id="SvgjsMask1001" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="13">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1.42312 12.2535C0.527839 10.6777 0 8.74009 0 6.64518C0 4.06371 0.801503 1.72103 2.10438 0H12.8956C14.1985 1.72103 15 4.06371 15 6.64518C15 8.74009 14.4722 10.6777 13.5769 12.2535H1.42312Z" fill="white"></path>
-</mask>
-<g mask="url(#mask0_824_8531)">
-<rect width="17.2987" height="2.5" transform="matrix(-0.684259 0.72924 0.72924 0.684259 13.223 -0.191071)" fill="white"></rect>
-<rect x="1.96942" y="-0.105652" width="8.95623" height="2" transform="rotate(46.8227 1.96942 -0.105652)" fill="white"></rect>
-</g>
-</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
-@media (prefers-color-scheme: dark) { :root { filter: none; } }
-</style></svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1006)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(2.491103202846975,0,0,2.491103202846975,150,216.01423487544486)"><svg xmlns="http://www.w3.org/2000/svg" width="281" height="228" viewBox="0 0 281 228" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.6598 228C9.88819 198.68 0 162.626 0 123.646C0 75.613 15.0148 32.023 39.4221 0H241.578C265.985 32.023 281 75.613 281 123.646C281 162.626 271.112 198.68 254.34 228H26.6598Z" fill="#0348AE"></path><mask id="mask0_1058_25075" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="281" height="228">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.6598 228C9.88819 198.68 0 162.626 0 123.646C0 75.613 15.0148 32.023 39.4221 0H241.578C265.985 32.023 281 75.613 281 123.646C281 162.626 271.112 198.68 254.34 228H26.6598Z" fill="white"></path>
+</mask><g mask="url(#mask0_1058_25075)">
+<rect width="322.901" height="46.6856" transform="matrix(-0.686719 0.726923 0.731547 0.681791 247.711 -3.55499)" fill="white"></rect>
+<rect width="167.179" height="37.3485" transform="matrix(0.686719 0.726923 -0.731547 0.681791 36.8939 -1.96576)" fill="white"></rect>
+</g></svg></g></g><defs><clipPath id="SvgjsClipPath1006"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(3.5587188612099645,0,0,3.5587188612099645,0,94.30604982206404)"><svg xmlns="http://www.w3.org/2000/svg" width="281" height="228" viewBox="0 0 281 228" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.6598 228C9.88819 198.68 0 162.626 0 123.646C0 75.613 15.0148 32.023 39.4221 0H241.578C265.985 32.023 281 75.613 281 123.646C281 162.626 271.112 198.68 254.34 228H26.6598Z" fill="#0348AE"></path><mask id="mask0_1058_25075" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="281" height="228">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.6598 228C9.88819 198.68 0 162.626 0 123.646C0 75.613 15.0148 32.023 39.4221 0H241.578C265.985 32.023 281 75.613 281 123.646C281 162.626 271.112 198.68 254.34 228H26.6598Z" fill="white"></path>
+</mask><g mask="url(#mask0_1058_25075)">
+<rect width="322.901" height="46.6856" transform="matrix(-0.686719 0.726923 0.731547 0.681791 247.711 -3.55499)" fill="white"></rect>
+<rect width="167.179" height="37.3485" transform="matrix(0.686719 0.726923 -0.731547 0.681791 36.8939 -1.96576)" fill="white"></rect>
+</g></svg></g></g></svg></g></svg>
